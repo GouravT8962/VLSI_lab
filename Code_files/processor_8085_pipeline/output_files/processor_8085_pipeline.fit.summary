@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu May 20 15:15:06 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : processor_8085_pipeline
+Top-level Entity Name : processor_8085_pipeline
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 4,216 / 22,320 ( 19 % )
+    Total combinational functions : 3,702 / 22,320 ( 17 % )
+    Dedicated logic registers : 2,479 / 22,320 ( 11 % )
+Total registers : 2479
+Total pins : 11 / 154 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

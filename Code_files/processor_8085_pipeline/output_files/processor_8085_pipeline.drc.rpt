@@ -1,0 +1,248 @@
+Design Assistant report for processor_8085_pipeline
+Sun Apr 11 21:27:31 2021
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Design Assistant Summary
+  3. Design Assistant Settings
+  4. Information only Violations
+  5. Design Assistant Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Design Assistant Summary                                                ;
++-----------------------------------+-------------------------------------+
+; Design Assistant Status           ; Analyzed - Sun Apr 11 21:27:31 2021 ;
+; Revision Name                     ; processor_8085_pipeline             ;
+; Top-level Entity Name             ; processor_8085_pipeline             ;
+; Family                            ; Cyclone IV E                        ;
+; Total Critical Violations         ; 0                                   ;
+; Total High Violations             ; 0                                   ;
+; Total Medium Violations           ; 0                                   ;
+; Total Information only Violations ; 72                                  ;
+; - Rule T101                       ; 22                                  ;
+; - Rule T102                       ; 50                                  ;
++-----------------------------------+-------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Design Assistant Settings                                                                                                                                                                ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----+
+; Option                                                                                                                                                               ; Setting      ; To ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----+
+; Design Assistant mode                                                                                                                                                ; Post-Fitting ;    ;
+; Threshold value for clock net not mapped to clock spines rule                                                                                                        ; 25           ;    ;
+; Minimum number of clock port feed by gated clocks                                                                                                                    ; 30           ;    ;
+; Minimum number of node fan-out                                                                                                                                       ; 30           ;    ;
+; Maximum number of nodes to report                                                                                                                                    ; 50           ;    ;
+; Rule C101: Gated clock should be implemented according to the Intel FPGA standard scheme                                                                             ; On           ;    ;
+; Rule C102: Logic cell should not be used to generate an inverted clock signal                                                                                        ; On           ;    ;
+; Rule C103: Gated clock does not feed at least a pre-defined number of clock ports to effectively save power                                                          ; On           ;    ;
+; Rule C104: Clock signal source should drive only clock input ports                                                                                                   ; On           ;    ;
+; Rule C105: Clock signal should be a global signal                                                                                                                    ; On           ;    ;
+; Rule C106: Clock signal source should not drive registers triggered by different clock edges                                                                         ; On           ;    ;
+; Rule R101: Combinational logic used as a reset signal should be synchronized                                                                                         ; On           ;    ;
+; Rule R102: External reset signals should be synchronized using two cascaded registers                                                                                ; On           ;    ;
+; Rule R103: External reset signal should be correctly synchronized                                                                                                    ; On           ;    ;
+; Rule R104: The reset signal that is generated in one clock domain and used in another clock domain should be correctly synchronized                                  ; On           ;    ;
+; Rule R105: The reset signal that is generated in one clock domain and used in another clock domain should be synchronized                                            ; On           ;    ;
+; Rule T101: Nodes with more than the specified number of fan-outs                                                                                                     ; On           ;    ;
+; Rule T102: Top nodes with the highest number of fan-outs                                                                                                             ; On           ;    ;
+; Rule A101: Design should not contain combinational loops                                                                                                             ; On           ;    ;
+; Rule A102: Register output should not drive its own control signal directly or through combinational logic                                                           ; On           ;    ;
+; Rule A103: Design should not contain delay chains                                                                                                                    ; On           ;    ;
+; Rule A104: Design should not contain ripple clock structures                                                                                                         ; On           ;    ;
+; Rule A105: Pulses should not be implemented asynchronously                                                                                                           ; On           ;    ;
+; Rule A106: Multiple pulses should not be generated in design                                                                                                         ; On           ;    ;
+; Rule A107: Design should not contain SR latches                                                                                                                      ; On           ;    ;
+; Rule A108: Design should not contain latches                                                                                                                         ; On           ;    ;
+; Rule S101: Output enable and input of the same tri-state node should not be driven by same signal source                                                             ; On           ;    ;
+; Rule S102: Synchronous port and asynchronous port of the same register should not be driven by the same signal source                                                ; On           ;    ;
+; Rule S103: More than one asynchronous port of a register should not be driven by the same signal source                                                              ; On           ;    ;
+; Rule S104: Clock port and any other port of a register should not be driven by the same signal source                                                                ; On           ;    ;
+; Rule D101: Data bits are not synchronized when transferred between asynchronous clock domains                                                                        ; On           ;    ;
+; Rule D102: Multiple data bits that are transferred across asynchronous clock domains are synchronized, but not all bits may be aligned in the receiving clock domain ; On           ;    ;
+; Rule D103: Data bits are not correctly synchronized when transferred between asynchronous clock domains                                                              ; On           ;    ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+----+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Information only Violations                                                                                                                               ;
++------------------------------------------------------------------+------------------------------------------------------------------------------+---------+
+; Rule name                                                        ; Name                                                                         ; Fan-Out ;
++------------------------------------------------------------------+------------------------------------------------------------------------------+---------+
+; Rule T101: Nodes with more than the specified number of fan-outs ; ID_EX_pcwrite                                                                ; 83      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; IM_8085:IM1|altsyncram:IM_rtl_0|altsyncram_1091:auto_generated|ram_block1a12 ; 54      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; clk~inputclkctrl                                                             ; 2360    ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_a[2]~11                                                                   ; 269     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_a[4]~1                                                                    ; 267     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; hazard_control_8085:h1|Acc_select[0]~14                                      ; 36      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_a[7]~13                                                                   ; 271     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; EX_MEM_write                                                                 ; 256     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_a[3]~9                                                                    ; 291     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_a[0]~7                                                                    ; 266     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_a[1]~5                                                                    ; 267     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_a[5]~3                                                                    ; 266     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_a[6]~15                                                                   ; 271     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_dw[3]~9                                                                   ; 256     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; hazard_control_8085:h1|Acc_select[1]~9                                       ; 36      ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_dw[5]~5                                                                   ; 256     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_dw[6]~3                                                                   ; 256     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_dw[4]~7                                                                   ; 256     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_dw[7]~1                                                                   ; 256     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_dw[2]~11                                                                  ; 256     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_dw[1]~13                                                                  ; 256     ;
+; Rule T101: Nodes with more than the specified number of fan-outs ; DM_dw[0]~15                                                                  ; 256     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; clk~inputclkctrl                                                             ; 2360    ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_a[3]~9                                                                    ; 291     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_a[6]~15                                                                   ; 271     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_a[7]~13                                                                   ; 271     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_a[2]~11                                                                   ; 269     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_a[4]~1                                                                    ; 267     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_a[1]~5                                                                    ; 267     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_a[0]~7                                                                    ; 266     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_a[5]~3                                                                    ; 266     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_dw[3]~9                                                                   ; 256     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_dw[6]~3                                                                   ; 256     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_dw[5]~5                                                                   ; 256     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_dw[0]~15                                                                  ; 256     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_dw[4]~7                                                                   ; 256     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_dw[7]~1                                                                   ; 256     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; EX_MEM_write                                                                 ; 256     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_dw[2]~11                                                                  ; 256     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_dw[1]~13                                                                  ; 256     ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; ID_EX_pcwrite                                                                ; 83      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; IM_8085:IM1|altsyncram:IM_rtl_0|altsyncram_1091:auto_generated|ram_block1a12 ; 54      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; hazard_control_8085:h1|Acc_select[0]~14                                      ; 36      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; hazard_control_8085:h1|Acc_select[1]~9                                       ; 36      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; IM_8085:IM1|altsyncram:IM_rtl_0|altsyncram_1091:auto_generated|ram_block1a9  ; 29      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; IM_8085:IM1|altsyncram:IM_rtl_0|altsyncram_1091:auto_generated|ram_block1a8  ; 29      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; IM_8085:IM1|altsyncram:IM_rtl_0|altsyncram_1091:auto_generated|ram_block1a11 ; 28      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; hazard_control_8085:h1|RF_d1_select[1]~20                                    ; 28      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; IM_8085:IM1|altsyncram:IM_rtl_0|altsyncram_1091:auto_generated|ram_block1a13 ; 28      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; IM_8085:IM1|altsyncram:IM_rtl_0|altsyncram_1091:auto_generated|ram_block1a14 ; 28      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; alucontrol_8085_single:alucontr|op[1]~3                                      ; 28      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; hazard_control_8085:h1|RF_d1_select[0]~24                                    ; 27      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; IM_8085:IM1|altsyncram:IM_rtl_0|altsyncram_1091:auto_generated|ram_block1a15 ; 26      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; ID_EX_IM_d[11]                                                               ; 26      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RF_a1[1]~1                                                                   ; 24      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; RF_a1[0]~0                                                                   ; 24      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; alucontrol_8085_single:alucontr|op[2]~4                                      ; 23      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; alucontrol_8085_single:alucontr|op[0]~2                                      ; 22      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; MEM_WB_RFsrcd2[0]                                                            ; 20      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; MEM_WB_RFsrcd2[1]                                                            ; 20      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; ID_EX_IM_d[15]                                                               ; 19      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; ID_EX_IM_d[14]                                                               ; 18      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; ID_EX_IM_d[13]                                                               ; 18      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_8085:DM1|DM~3628                                                          ; 16      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_8085:DM1|DM~3415                                                          ; 16      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_8085:DM1|DM~3577                                                          ; 16      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_8085:DM1|DM~3476                                                          ; 16      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_8085:DM1|DM~3472                                                          ; 16      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_8085:DM1|DM~3436                                                          ; 16      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_8085:DM1|DM~3474                                                          ; 16      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_8085:DM1|DM~3662                                                          ; 16      ;
+; Rule T102: Top nodes with the highest number of fan-outs         ; DM_8085:DM1|DM~3417                                                          ; 16      ;
++------------------------------------------------------------------+------------------------------------------------------------------------------+---------+
+
+
++---------------------------+
+; Design Assistant Messages ;
++---------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Design Assistant
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sun Apr 11 21:27:30 2021
+Info: Command: quartus_drc processor_8085_pipeline -c processor_8085_pipeline
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'processor_8085_pipeline.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332144): No user constrained base clocks found in the design
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (308046): (Information) Rule T101: Nodes with more than the specified number of fan-outs. (Value defined:30). Found 22 node(s) with highest fan-out.
+    Info (308011): Node  "ID_EX_pcwrite" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 54
+    Info (308011): Node  "IM_8085:IM1|altsyncram:IM_rtl_0|altsyncram_1091:auto_generated|ram_block1a12" File: /home/alex/verilog_codes/processor_8085_pipeline/db/altsyncram_1091.tdf Line: 287
+    Info (308011): Node  "clk~inputclkctrl" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 2
+    Info (308011): Node  "DM_a[2]~11" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_a[4]~1" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "hazard_control_8085:h1|Acc_select[0]~14" File: /home/alex/verilog_codes/processor_8085_pipeline/hazard_control_8085.v Line: 3
+    Info (308011): Node  "DM_a[7]~13" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "EX_MEM_write" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 78
+    Info (308011): Node  "DM_a[3]~9" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_a[0]~7" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_a[1]~5" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_a[5]~3" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_a[6]~15" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_dw[3]~9" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "hazard_control_8085:h1|Acc_select[1]~9" File: /home/alex/verilog_codes/processor_8085_pipeline/hazard_control_8085.v Line: 3
+    Info (308011): Node  "DM_dw[5]~5" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_dw[6]~3" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_dw[4]~7" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_dw[7]~1" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_dw[2]~11" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_dw[1]~13" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_dw[0]~15" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+Info (308044): (Information) Rule T102: Top nodes with the highest number of fan-outs. (Value defined:50). Found 50 node(s) with highest fan-out.
+    Info (308011): Node  "clk~inputclkctrl" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 2
+    Info (308011): Node  "DM_a[3]~9" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_a[6]~15" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_a[7]~13" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_a[2]~11" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_a[4]~1" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_a[1]~5" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_a[0]~7" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_a[5]~3" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_dw[3]~9" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_dw[6]~3" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_dw[5]~5" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_dw[0]~15" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_dw[4]~7" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_dw[7]~1" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "EX_MEM_write" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 78
+    Info (308011): Node  "DM_dw[2]~11" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "DM_dw[1]~13" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 22
+    Info (308011): Node  "ID_EX_pcwrite" File: /home/alex/verilog_codes/processor_8085/processor_8085_pipeline.v Line: 54
+    Info (308011): Node  "IM_8085:IM1|altsyncram:IM_rtl_0|altsyncram_1091:auto_generated|ram_block1a12" File: /home/alex/verilog_codes/processor_8085_pipeline/db/altsyncram_1091.tdf Line: 287
+    Info (308011): Node  "hazard_control_8085:h1|Acc_select[0]~14" File: /home/alex/verilog_codes/processor_8085_pipeline/hazard_control_8085.v Line: 3
+    Info (308011): Node  "hazard_control_8085:h1|Acc_select[1]~9" File: /home/alex/verilog_codes/processor_8085_pipeline/hazard_control_8085.v Line: 3
+    Info (308011): Node  "IM_8085:IM1|altsyncram:IM_rtl_0|altsyncram_1091:auto_generated|ram_block1a9" File: /home/alex/verilog_codes/processor_8085_pipeline/db/altsyncram_1091.tdf Line: 224
+    Info (308011): Node  "IM_8085:IM1|altsyncram:IM_rtl_0|altsyncram_1091:auto_generated|ram_block1a8" File: /home/alex/verilog_codes/processor_8085_pipeline/db/altsyncram_1091.tdf Line: 203
+    Info (308011): Node  "IM_8085:IM1|altsyncram:IM_rtl_0|altsyncram_1091:auto_generated|ram_block1a11" File: /home/alex/verilog_codes/processor_8085_pipeline/db/altsyncram_1091.tdf Line: 266
+    Info (308011): Node  "hazard_control_8085:h1|RF_d1_select[1]~20" File: /home/alex/verilog_codes/processor_8085_pipeline/hazard_control_8085.v Line: 3
+    Info (308011): Node  "IM_8085:IM1|altsyncram:IM_rtl_0|altsyncram_1091:auto_generated|ram_block1a13" File: /home/alex/verilog_codes/processor_8085_pipeline/db/altsyncram_1091.tdf Line: 308
+    Info (308011): Node  "IM_8085:IM1|altsyncram:IM_rtl_0|altsyncram_1091:auto_generated|ram_block1a14" File: /home/alex/verilog_codes/processor_8085_pipeline/db/altsyncram_1091.tdf Line: 329
+    Info (308011): Node  "alucontrol_8085_single:alucontr|op[1]~3" File: /home/alex/verilog_codes/processor_8085/alucontrol_8085_single.v Line: 3
+    Info (308011): Node  "hazard_control_8085:h1|RF_d1_select[0]~24" File: /home/alex/verilog_codes/processor_8085_pipeline/hazard_control_8085.v Line: 3
+    Info (308002): Truncated list of Design Assistant messages to 30 messages. Go to sections under Design Assistant section of Compilation Report for complete lists of Design Assistant messages generated.
+Info (308007): Design Assistant information: finished post-fitting analysis of current design -- generated 72 information messages and 0 warning messages
+Info: Quartus Prime Design Assistant was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 981 megabytes
+    Info: Processing ended: Sun Apr 11 21:27:31 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu May 20 15:14:16 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : processor_8085_pipeline
+Top-level Entity Name : processor_8085_pipeline
+Family : Cyclone IV E
+Total logic elements : 5,108
+    Total combinational functions : 3,702
+    Dedicated logic registers : 2,479
+Total registers : 2479
+Total pins : 11
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

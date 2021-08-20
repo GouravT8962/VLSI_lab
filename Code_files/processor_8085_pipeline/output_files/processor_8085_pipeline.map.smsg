@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at processor_8085_pipeline.v(260): always construct contains both blocking and non-blocking assignments File: /home/alex/verilog_codes/processor_8085_pipeline/processor_8085_pipeline.v Line: 260
