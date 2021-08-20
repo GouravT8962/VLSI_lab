@@ -1,0 +1,9 @@
+module IM_8085(addr,data);
+input [7:0] addr;
+output [15:0] data;
+
+reg [15:0] IM [255:0];
+
+assign data=IM[addr];
+
+endmodule

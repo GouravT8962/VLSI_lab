@@ -1,0 +1,146 @@
+module controller_8085_single(opcode,funct,pcwrite,regwrite,Accwrite,read,write,cywrite,zwrite,RFsrca2,cinsrc,zsrc,pcsrc,RFsrca1,alu2srca,alu2srcb,DMsrca,DMsrcd,cysrc,Accsrc,RFsrcd2);
+input [4:0] opcode,funct;
+output reg regwrite,Accwrite,read,write,cywrite,zwrite,RFsrca2,cinsrc,zsrc;
+output reg [1:0] pcsrc,RFsrca1,alu2srca,alu2srcb,DMsrca,DMsrcd,cysrc;
+output reg [2:0] Accsrc,RFsrcd2;
+output reg pcwrite=1'b1;
+always @(*)
+begin
+if((opcode==5'b0)&&((funct==5'b0)||(funct==5'b00010))) //reg direct add/sub
+begin
+pcsrc=2'b00;
+pcwrite=1'b1;
+RFsrca1=2'b00;
+RFsrca2=1'bx;
+regwrite=1'b0;
+RFsrcd2=3'bxxx;
+alu2srca=2'b00;
+alu2srcb=2'b00;
+cysrc=2'b00;
+Accsrc=3'b000;
+Accwrite=1'b1;
+DMsrca=2'bxx;
+DMsrcd=2'bxx;
+read=1'b0;
+write=1'b0;
+cywrite=1'b1;
+zwrite=1'b1;
+cinsrc=1'b0;
+zsrc=1'b0;
+end
+
+else if((opcode==5'b0)&&((funct==5'b1)||(funct==5'b00011))) //reg direct adc/sbb
+begin
+pcsrc=2'b00;
+pcwrite=1'b1;
+RFsrca1=2'b00;
+RFsrca2=1'bx;
+regwrite=1'b0;
+RFsrcd2=3'bxxx;
+alu2srca=2'b00;
+alu2srcb=2'b00;
+cysrc=2'b00;
+Accsrc=3'b000;
+Accwrite=1'b1;
+DMsrca=2'bxx;
+DMsrcd=2'bxx;
+read=1'b0;
+write=1'b0;
+cywrite=1'b1;
+zwrite=1'b1;
+cinsrc=1'b1;
+zsrc=1'b0;
+end
+
+else if((opcode==5'b1)&&((funct==5'b00100)||(funct==5'b00101))) //reg direct inr/dcr
+begin
+pcsrc=2'b00;
+pcwrite=1'b1;
+RFsrca1=2'b00;
+RFsrca2=1'b0;
+regwrite=1'b1;
+RFsrcd2=3'b101;
+alu2srca=2'b01;
+alu2srcb=2'b10;
+cysrc=2'bxx;
+Accsrc=3'bxxx;
+Accwrite=1'b0;
+DMsrca=2'bxx;
+DMsrcd=2'bxx;
+read=1'b0;
+write=1'b0;
+cywrite=1'b0;
+zwrite=1'b1;
+cinsrc=1'b0;
+zsrc=1'b0;
+end
+
+else if((opcode==5'b1)&&((funct==5'b00110)||(funct==5'b00111)||(funct==5'b01000))) //reg direct ana/ora/xra
+begin
+pcsrc=2'b00;
+pcwrite=1'b1;
+RFsrca1=2'b00;
+RFsrca2=1'bx;
+regwrite=1'b0;
+RFsrcd2=3'bxxx;
+alu2srca=2'b00;
+alu2srcb=2'b00;
+cysrc=2'b10;
+Accsrc=3'b000;
+Accwrite=1'b1;
+DMsrca=2'bxx;
+DMsrcd=2'bxx;
+read=1'b0;
+write=1'b0;
+cywrite=1'b1;
+zwrite=1'b1;
+cinsrc=1'b0;
+zsrc=1'b0;
+end
+
+else if((opcode==5'b0)&&(funct==5'b01001))//reg direct cmp
+begin
+pcsrc=2'b00;
+pcwrite=1'b1;
+RFsrca1=2'b00;
+RFsrca2=1'bx;
+regwrite=1'b0;
+RFsrcd2=3'bxxx;
+alu2srca=2'b00;
+alu2srcb=2'b00;
+cysrc=2'b00;
+Accsrc=3'b000;
+Accwrite=1'b0;
+DMsrca=2'bxx;
+DMsrcd=2'bxx;
+read=1'b0;
+write=1'b0;
+cywrite=1'b1;
+zwrite=1'b1;
+cinsrc=1'b0;
+zsrc=1'b0;
+end
+
+else if((opcode==5'b1)&&((funct==5'b0)||(funct==5'b00010))) //reg indirect add/sub
+begin
+pcsrc=2'b00;
+pcwrite=1'b1;
+RFsrca1=2'b00;
+RFsrca2=1'bx;
+regwrite=1'b0;
+RFsrcd2=3'bxxx;
+alu2srca=2'b00;
+alu2srcb=2'b00;
+cysrc=2'b00;
+Accsrc=3'b000;
+Accwrite=1'b1;
+DMsrca=2'bxx;
+DMsrcd=2'bxx;
+read=1'b0;
+write=1'b0;
+cywrite=1'b1;
+zwrite=1'b1;
+cinsrc=1'b0;
+zsrc=1'b0;
+end
+

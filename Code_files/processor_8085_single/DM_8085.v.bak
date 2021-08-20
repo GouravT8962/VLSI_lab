@@ -1,0 +1,18 @@
+module DM_8085(addr,datar,dataw,clk,read,write);
+input [7:0] addr;
+input clk,read,write;
+input [7:0] dataw;
+output [7:0] datar;
+
+reg [7:0] DM [255:0];
+
+assign datar=(read)?DM[addr]:8'hxx;
+
+always @(posedge clk)
+begin
+if(write)
+DM[addr]<=dataw;
+end
+
+endmodule
+

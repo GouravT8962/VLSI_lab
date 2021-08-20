@@ -1,0 +1,42 @@
+`timescale 1ns/1ps
+module processor_8085_single_tb1;
+reg clk;
+
+wire z,cy;
+
+integer i,j;
+processor_8085_single p1(clk,cy,z);
+
+initial clk=1'b0;
+always #5 clk=~clk;
+
+
+
+
+initial
+begin
+for(i=1;i<=7;i=i+1)
+p1.RF1.regfile_8085[i-1]=i;
+end
+
+
+initial
+begin
+p1.IM1.IM[0]=16'h9820; //MVI B,20H
+p1.IM1.IM[1]=16'h9930; //MVI C,30H
+p1.IM1.IM[2]=16'h0000; //ADD B
+p1.IM1.IM[3]=16'h0100; // ADD C
+p1.IM1.IM[4]=16'h2070; // HALT
+p1.pc=0;
+#2;
+
+for(j=0;j<32;j=j+1) begin
+$display($time," %d %d ",p1.Accout,p1.pc);
+#10;
+end
+end
+initial
+begin
+#600 $stop;
+end
+endmodule
