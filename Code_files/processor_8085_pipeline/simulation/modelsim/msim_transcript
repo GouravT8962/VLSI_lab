@@ -1,0 +1,663 @@
+# ERROR: No extended dataflow license exists
+# do processor_8085_pipeline_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/alex/intelFPGA/18.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_pipeline {/home/alex/verilog_codes/processor_8085_pipeline/adder_8085.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:34 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_pipeline" /home/alex/verilog_codes/processor_8085_pipeline/adder_8085.v 
+# -- Compiling module adder_8085
+# 
+# Top level modules:
+# 	adder_8085
+# End time: 15:22:34 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_pipeline {/home/alex/verilog_codes/processor_8085_pipeline/RF_8085_single.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:34 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_pipeline" /home/alex/verilog_codes/processor_8085_pipeline/RF_8085_single.v 
+# -- Compiling module RF_8085_single
+# 
+# Top level modules:
+# 	RF_8085_single
+# End time: 15:22:34 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_pipeline {/home/alex/verilog_codes/processor_8085_pipeline/flag.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:34 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_pipeline" /home/alex/verilog_codes/processor_8085_pipeline/flag.v 
+# -- Compiling module flag
+# 
+# Top level modules:
+# 	flag
+# End time: 15:22:34 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_pipeline {/home/alex/verilog_codes/processor_8085_pipeline/ALU_8085.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:34 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_pipeline" /home/alex/verilog_codes/processor_8085_pipeline/ALU_8085.v 
+# -- Compiling module ALU_8085
+# 
+# Top level modules:
+# 	ALU_8085
+# End time: 15:22:34 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_pipeline {/home/alex/verilog_codes/processor_8085_pipeline/controller_8085_single.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:34 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_pipeline" /home/alex/verilog_codes/processor_8085_pipeline/controller_8085_single.v 
+# -- Compiling module controller_8085_single
+# 
+# Top level modules:
+# 	controller_8085_single
+# End time: 15:22:34 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_pipeline {/home/alex/verilog_codes/processor_8085_pipeline/ACC_8085.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:34 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_pipeline" /home/alex/verilog_codes/processor_8085_pipeline/ACC_8085.v 
+# -- Compiling module ACC_8085
+# 
+# Top level modules:
+# 	ACC_8085
+# End time: 15:22:34 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_pipeline {/home/alex/verilog_codes/processor_8085_pipeline/alucontrol_8085_single.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:34 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_pipeline" /home/alex/verilog_codes/processor_8085_pipeline/alucontrol_8085_single.v 
+# -- Compiling module alucontrol_8085_single
+# 
+# Top level modules:
+# 	alucontrol_8085_single
+# End time: 15:22:34 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_pipeline {/home/alex/verilog_codes/processor_8085_pipeline/processor_8085_pipeline.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:34 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_pipeline" /home/alex/verilog_codes/processor_8085_pipeline/processor_8085_pipeline.v 
+# -- Compiling module processor_8085_pipeline
+# 
+# Top level modules:
+# 	processor_8085_pipeline
+# End time: 15:22:34 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_pipeline {/home/alex/verilog_codes/processor_8085_pipeline/DM_8085.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:34 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_pipeline" /home/alex/verilog_codes/processor_8085_pipeline/DM_8085.v 
+# -- Compiling module DM_8085
+# 
+# Top level modules:
+# 	DM_8085
+# End time: 15:22:34 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_pipeline {/home/alex/verilog_codes/processor_8085_pipeline/hazard_control_8085.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:34 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_pipeline" /home/alex/verilog_codes/processor_8085_pipeline/hazard_control_8085.v 
+# -- Compiling module hazard_control_8085
+# 
+# Top level modules:
+# 	hazard_control_8085
+# End time: 15:22:34 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_pipeline {/home/alex/verilog_codes/processor_8085_pipeline/IM_8085.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:34 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_pipeline" /home/alex/verilog_codes/processor_8085_pipeline/IM_8085.v 
+# -- Compiling module IM_8085
+# 
+# Top level modules:
+# 	IM_8085
+# End time: 15:22:34 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_pipeline {/home/alex/verilog_codes/processor_8085_pipeline/generic_testbench_pipeline_8085.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:34 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_pipeline" /home/alex/verilog_codes/processor_8085_pipeline/generic_testbench_pipeline_8085.v 
+# -- Compiling module generic_testbench_pipeline_8085
+# 
+# Top level modules:
+# 	generic_testbench_pipeline_8085
+# End time: 15:22:34 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  generic_testbench_pipeline_8085
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" generic_testbench_pipeline_8085 
+# Start time: 15:22:34 on May 20,2021
+# Loading work.generic_testbench_pipeline_8085
+# Loading work.processor_8085_pipeline
+# Loading work.IM_8085
+# Loading work.adder_8085
+# Loading work.ALU_8085
+# Loading work.DM_8085
+# Loading work.RF_8085_single
+# Loading work.ACC_8085
+# Loading work.flag
+# Loading work.alucontrol_8085_single
+# Loading work.controller_8085_single
+# Loading work.hazard_control_8085
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# time:                   2	,pc:  0	,ACC:  0,	B:  0,	C:  0,	D:  0,	E:  0,	H:  0,	L:  0 cy: 0, z: 0   110   180 00000 00000 00000 00000 
+# time:                  12	,pc:  1	,ACC:  0,	B:  0,	C:  0,	D:  0,	E:  0,	H:  0,	L:  0 cy: 0, z: 0   110   180 00000 00000 00000 00000 
+# time:                  22	,pc:  2	,ACC:  0,	B:  0,	C:  0,	D:  0,	E:  0,	H:  0,	L:  0 cy: 0, z: 0   110   180 00000 00000 00000 00000 
+# time:                  32	,pc:  3	,ACC:  0,	B:  0,	C:  0,	D:  0,	E:  0,	H:  0,	L:  0 cy: 0, z: 0   110   180 00000 00000 00000 00000 
+# time:                  42	,pc:  4	,ACC:  0,	B:  0,	C:  0,	D:  0,	E:  0,	H:  0,	L:  0 cy: 0, z: 1   110   180 00000 00000 00000 00000 
+# time:                  52	,pc:  5	,ACC:  0,	B:  0,	C:  0,	D:  0,	E:  0,	H:  9,	L:  0 cy: 0, z: 1   110   180 00000 00000 00000 00000 
+# time:                  62	,pc:  6	,ACC:  0,	B:  0,	C:  0,	D:  0,	E:  0,	H:  9,	L:  0 cy: 0, z: 1   110   180 00000 00000 00000 00000 
+# time:                  72	,pc:  7	,ACC:  0,	B:  5,	C:  0,	D:  0,	E:  0,	H:  9,	L:  0 cy: 0, z: 1   110   180 00000 00000 00000 00000 
+# time:                  82	,pc:  8	,ACC:  0,	B:  5,	C:  0,	D:  0,	E:  0,	H: 10,	L:  0 cy: 0, z: 0   110   180 00000 00000 00000 00000 
+# time:                  92	,pc:  9	,ACC:  0,	B:  5,	C:  0,	D:  0,	E:  0,	H: 10,	L:  0 cy: 0, z: 0   110   180 00000 00000 00000 00000 
+# time:                 102	,pc: 13	,ACC:  0,	B:  5,	C:  3,	D:  0,	E:  0,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 00000 00000 00000 
+# time:                 112	,pc: 14	,ACC:  0,	B:  5,	C:  3,	D:  1,	E:  0,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 00000 00000 00000 
+# time:                 122	,pc: 15	,ACC:  0,	B:  5,	C:  3,	D:  1,	E:  0,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 00000 00000 00000 
+# time:                 132	,pc: 16	,ACC:  0,	B:  5,	C:  3,	D:  1,	E:  0,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 00000 00000 00000 
+# time:                 142	,pc: 17	,ACC:  0,	B:  5,	C:  3,	D:  1,	E:  0,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 00000 00000 00000 
+# time:                 152	,pc: 18	,ACC:  0,	B:  5,	C:  3,	D:  1,	E:  5,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 00000 00000 00000 
+# time:                 162	,pc: 19	,ACC:  0,	B:  5,	C:  3,	D:  1,	E:  5,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 00000 00000 00000 
+# time:                 172	,pc: 15	,ACC:  1,	B:  5,	C:  3,	D:  1,	E:  5,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 00000 00000 
+# time:                 182	,pc: 16	,ACC:  1,	B:  5,	C:  3,	D:  1,	E:  4,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 00000 00000 
+# time:                 192	,pc: 17	,ACC:  1,	B:  5,	C:  3,	D:  1,	E:  4,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 00000 00000 
+# time:                 202	,pc: 15	,ACC:  1,	B:  5,	C:  3,	D:  1,	E:  4,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 00000 00000 
+# time:                 212	,pc: 16	,ACC:  1,	B:  5,	C:  3,	D:  1,	E:  4,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 00000 00000 
+# time:                 222	,pc: 17	,ACC:  2,	B:  5,	C:  3,	D:  1,	E:  4,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 00000 00000 
+# time:                 232	,pc: 15	,ACC:  2,	B:  5,	C:  3,	D:  1,	E:  3,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 00000 00000 
+# time:                 242	,pc: 16	,ACC:  2,	B:  5,	C:  3,	D:  1,	E:  3,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 00000 00000 
+# time:                 252	,pc: 17	,ACC:  3,	B:  5,	C:  3,	D:  1,	E:  3,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 00000 00000 
+# time:                 262	,pc: 15	,ACC:  3,	B:  5,	C:  3,	D:  1,	E:  2,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 00000 00000 
+# time:                 272	,pc: 16	,ACC:  3,	B:  5,	C:  3,	D:  1,	E:  2,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 00000 00000 
+# time:                 282	,pc: 17	,ACC:  4,	B:  5,	C:  3,	D:  1,	E:  2,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 00000 00000 
+# time:                 292	,pc: 15	,ACC:  4,	B:  5,	C:  3,	D:  1,	E:  1,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 00000 00000 
+# time:                 302	,pc: 16	,ACC:  4,	B:  5,	C:  3,	D:  1,	E:  1,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 00000 00000 
+# time:                 312	,pc: 18	,ACC:  5,	B:  5,	C:  3,	D:  1,	E:  1,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 60f11 00000 00000 
+# time:                 322	,pc: 19	,ACC:  5,	B:  5,	C:  3,	D:  1,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 00000 00000 
+# time:                 332	,pc: 20	,ACC:  5,	B:  5,	C:  3,	D:  1,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 00000 00000 
+# time:                 342	,pc: 21	,ACC:  5,	B:  5,	C:  3,	D:  1,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 00000 00000 
+# time:                 352	,pc:  8	,ACC:  5,	B:  5,	C:  3,	D:  1,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 00000 
+# time:                 362	,pc:  9	,ACC:  5,	B:  5,	C:  3,	D:  5,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 00000 
+# time:                 372	,pc: 10	,ACC:  5,	B:  5,	C:  3,	D:  5,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 00000 
+# time:                 382	,pc: 11	,ACC:  5,	B:  5,	C:  3,	D:  5,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 00000 
+# time:                 392	,pc:  7	,ACC:  5,	B:  5,	C:  3,	D:  5,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 70709 
+# time:                 402	,pc: 13	,ACC:  5,	B:  5,	C:  2,	D:  5,	E:  0,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 60f11 70813 70709 
+# time:                 412	,pc: 14	,ACC:  5,	B:  5,	C:  2,	D:  5,	E:  0,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 60f11 70813 70709 
+# time:                 422	,pc: 15	,ACC:  5,	B:  5,	C:  2,	D:  5,	E:  0,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 60f11 70813 70709 
+# time:                 432	,pc: 16	,ACC:  5,	B:  5,	C:  2,	D:  5,	E:  0,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 60f11 70813 70709 
+# time:                 442	,pc: 17	,ACC:  5,	B:  5,	C:  2,	D:  5,	E:  0,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 60f11 70813 70709 
+# time:                 452	,pc: 15	,ACC:  5,	B:  5,	C:  2,	D:  5,	E:  5,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 60f11 70813 70709 
+# time:                 462	,pc: 16	,ACC:  0,	B:  5,	C:  2,	D:  5,	E:  5,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 60f11 70813 70709 
+# time:                 472	,pc: 17	,ACC:  5,	B:  5,	C:  2,	D:  5,	E:  5,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 482	,pc: 15	,ACC:  5,	B:  5,	C:  2,	D:  5,	E:  4,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 492	,pc: 16	,ACC:  5,	B:  5,	C:  2,	D:  5,	E:  4,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 502	,pc: 17	,ACC: 10,	B:  5,	C:  2,	D:  5,	E:  4,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 512	,pc: 15	,ACC: 10,	B:  5,	C:  2,	D:  5,	E:  3,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 522	,pc: 16	,ACC: 10,	B:  5,	C:  2,	D:  5,	E:  3,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 532	,pc: 17	,ACC: 15,	B:  5,	C:  2,	D:  5,	E:  3,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 542	,pc: 15	,ACC: 15,	B:  5,	C:  2,	D:  5,	E:  2,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 552	,pc: 16	,ACC: 15,	B:  5,	C:  2,	D:  5,	E:  2,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 562	,pc: 17	,ACC: 20,	B:  5,	C:  2,	D:  5,	E:  2,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 572	,pc: 15	,ACC: 20,	B:  5,	C:  2,	D:  5,	E:  1,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 582	,pc: 16	,ACC: 20,	B:  5,	C:  2,	D:  5,	E:  1,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 592	,pc: 18	,ACC: 25,	B:  5,	C:  2,	D:  5,	E:  1,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 60f11 70813 70709 
+# time:                 602	,pc: 19	,ACC: 25,	B:  5,	C:  2,	D:  5,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 70709 
+# time:                 612	,pc:  8	,ACC: 25,	B:  5,	C:  2,	D:  5,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 70709 
+# time:                 622	,pc:  9	,ACC: 25,	B:  5,	C:  2,	D:  5,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 70709 
+# time:                 632	,pc:  7	,ACC: 25,	B:  5,	C:  2,	D:  5,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 70709 
+# time:                 642	,pc: 13	,ACC: 25,	B:  5,	C:  2,	D: 25,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 70709 
+# time:                 652	,pc: 14	,ACC: 25,	B:  5,	C:  2,	D: 25,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 70709 
+# time:                 662	,pc: 15	,ACC: 25,	B:  5,	C:  1,	D: 25,	E:  0,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 60f11 70813 70709 
+# time:                 672	,pc: 16	,ACC: 25,	B:  5,	C:  1,	D: 25,	E:  0,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 60f11 70813 70709 
+# time:                 682	,pc: 17	,ACC: 25,	B:  5,	C:  1,	D: 25,	E:  0,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 60f11 70813 70709 
+# time:                 692	,pc: 15	,ACC: 25,	B:  5,	C:  1,	D: 25,	E:  5,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 60f11 70813 70709 
+# time:                 702	,pc: 16	,ACC:  0,	B:  5,	C:  1,	D: 25,	E:  5,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 60f11 70813 70709 
+# time:                 712	,pc: 17	,ACC: 25,	B:  5,	C:  1,	D: 25,	E:  5,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 722	,pc: 15	,ACC: 25,	B:  5,	C:  1,	D: 25,	E:  4,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 732	,pc: 16	,ACC: 25,	B:  5,	C:  1,	D: 25,	E:  4,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 742	,pc: 17	,ACC: 50,	B:  5,	C:  1,	D: 25,	E:  4,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 752	,pc: 15	,ACC: 50,	B:  5,	C:  1,	D: 25,	E:  3,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 762	,pc: 16	,ACC: 50,	B:  5,	C:  1,	D: 25,	E:  3,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 772	,pc: 17	,ACC: 75,	B:  5,	C:  1,	D: 25,	E:  3,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 782	,pc: 15	,ACC: 75,	B:  5,	C:  1,	D: 25,	E:  2,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 792	,pc: 16	,ACC: 75,	B:  5,	C:  1,	D: 25,	E:  2,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 802	,pc: 17	,ACC:100,	B:  5,	C:  1,	D: 25,	E:  2,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 812	,pc: 15	,ACC:100,	B:  5,	C:  1,	D: 25,	E:  1,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 822	,pc: 16	,ACC:100,	B:  5,	C:  1,	D: 25,	E:  1,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 70f11 70813 70709 
+# time:                 832	,pc: 18	,ACC:125,	B:  5,	C:  1,	D: 25,	E:  1,	H: 10,	L:  0 cy: 0, z: 0   110   180 70d07 60f11 70813 70709 
+# time:                 842	,pc: 19	,ACC:125,	B:  5,	C:  1,	D: 25,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 70709 
+# time:                 852	,pc:  8	,ACC:125,	B:  5,	C:  1,	D: 25,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 70709 
+# time:                 862	,pc:  9	,ACC:125,	B:  5,	C:  1,	D: 25,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 70709 
+# time:                 872	,pc:  7	,ACC:125,	B:  5,	C:  1,	D: 25,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 70709 
+# time:                 882	,pc: 13	,ACC:125,	B:  5,	C:  1,	D:125,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 70709 
+# time:                 892	,pc: 10	,ACC:125,	B:  5,	C:  1,	D:125,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 60709 
+# time:                 902	,pc: 11	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 60709 
+# time:                 912	,pc: 12	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 60709 
+# time:                 922	,pc: 13	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 60709 
+# time:                 932	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 10,	L:  0 cy: 0, z: 1   110   180 70d07 60f11 70813 60709 
+# time:                 942	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                 952	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                 962	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                 972	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                 982	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                 992	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1002	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1012	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1022	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1032	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1042	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1052	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1062	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1072	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1082	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1092	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1102	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1112	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1122	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1132	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1142	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1152	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1162	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1172	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1182	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1192	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1202	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1212	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1222	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1232	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1242	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1252	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1262	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1272	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1282	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1292	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1302	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1312	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1322	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1332	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1342	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1352	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1362	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1372	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1382	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1392	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1402	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1412	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1422	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1432	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1442	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1452	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1462	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1472	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1482	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1492	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1502	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1512	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1522	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1532	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1542	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1552	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1562	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1572	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1582	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1592	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1602	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1612	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1622	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1632	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1642	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1652	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1662	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1672	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1682	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1692	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1702	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1712	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1722	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1732	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1742	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1752	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1762	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1772	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1782	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1792	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1802	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1812	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1822	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1832	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1842	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1852	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1862	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1872	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1882	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1892	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1902	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1912	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1922	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1932	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1942	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1952	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1962	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1972	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1982	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                1992	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2002	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2012	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2022	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2032	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2042	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2052	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2062	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2072	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2082	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2092	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2102	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2112	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2122	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2132	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2142	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2152	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2162	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2172	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2182	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2192	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2202	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2212	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2222	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2232	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2242	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2252	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2262	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2272	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2282	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2292	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2302	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2312	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2322	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2332	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2342	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2352	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2362	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2372	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2382	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2392	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2402	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2412	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2422	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2432	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2442	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2452	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2462	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2472	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2482	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2492	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2502	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2512	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2522	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2532	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2542	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2552	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2562	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2572	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2582	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2592	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2602	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2612	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2622	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2632	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2642	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2652	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2662	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2672	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2682	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2692	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2702	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2712	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2722	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2732	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2742	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2752	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2762	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2772	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2782	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2792	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2802	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2812	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2822	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2832	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2842	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2852	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2862	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2872	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2882	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2892	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2902	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2912	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2922	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2932	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2942	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2952	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2962	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2972	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2982	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                2992	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3002	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3012	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3022	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3032	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3042	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3052	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3062	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3072	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3082	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3092	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3102	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3112	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3122	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3132	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3142	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3152	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3162	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3172	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3182	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3192	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3202	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3212	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3222	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3232	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3242	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3252	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3262	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3272	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3282	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3292	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3302	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3312	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3322	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3332	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3342	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3352	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3362	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3372	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3382	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3392	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3402	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3412	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3422	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3432	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3442	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3452	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3462	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3472	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3482	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3492	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3502	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3512	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3522	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3532	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3542	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3552	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3562	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3572	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3582	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3592	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3602	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3612	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3622	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3632	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3642	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3652	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3662	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3672	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3682	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3692	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3702	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3712	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3722	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3732	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3742	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3752	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3762	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3772	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3782	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3792	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3802	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3812	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3822	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3832	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3842	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3852	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3862	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3872	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3882	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3892	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3902	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3912	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3922	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3932	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3942	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3952	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3962	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3972	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3982	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                3992	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4002	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4012	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4022	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4032	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4042	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4052	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4062	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4072	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4082	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4092	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4102	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4112	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4122	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4132	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4142	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4152	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4162	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4172	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4182	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4192	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4202	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4212	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4222	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4232	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4242	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4252	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4262	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4272	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4282	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4292	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4302	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4312	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4322	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4332	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4342	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4352	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4362	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4372	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4382	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4392	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4402	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4412	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4422	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4432	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4442	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4452	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4462	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4472	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4482	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4492	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4502	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4512	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4522	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4532	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4542	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4552	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4562	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4572	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4582	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4592	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4602	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4612	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4622	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4632	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4642	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4652	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4662	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4672	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4682	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4692	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4702	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4712	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4722	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4732	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4742	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4752	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4762	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4772	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4782	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4792	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4802	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4812	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4822	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4832	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4842	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4852	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4862	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4872	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4882	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4892	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4902	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4912	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4922	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4932	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4942	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4952	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4962	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4972	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4982	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# time:                4992	,pc: 14	,ACC:125,	B:  5,	C:  0,	D:125,	E:  0,	H: 11,	L:  0 cy: 0, z: 0   125   180 70d07 60f11 70813 60709 
+# ** Note: $stop    : /home/alex/verilog_codes/processor_8085_pipeline/generic_testbench_pipeline_8085.v(27)
+#    Time: 5 us  Iteration: 0  Instance: /generic_testbench_pipeline_8085
+# Break in Module generic_testbench_pipeline_8085 at /home/alex/verilog_codes/processor_8085_pipeline/generic_testbench_pipeline_8085.v line 27
+# 
+# stdin: <EOF>
+# End time: 15:23:03 on May 20,2021, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 0

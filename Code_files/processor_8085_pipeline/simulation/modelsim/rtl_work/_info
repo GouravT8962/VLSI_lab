@@ -1,0 +1,279 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/alex/verilog_codes/processor_8085_pipeline/simulation/modelsim
+vACC_8085
+Z1 !s110 1621504354
+!i10b 1
+!s100 IbC]MD]@0<?dNF^ZNBC=N0
+I?no0:akGbYz7R0CbPJmGY2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1617722219
+8/home/alex/verilog_codes/processor_8085_pipeline/ACC_8085.v
+F/home/alex/verilog_codes/processor_8085_pipeline/ACC_8085.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1621504354.000000
+!s107 /home/alex/verilog_codes/processor_8085_pipeline/ACC_8085.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_pipeline|/home/alex/verilog_codes/processor_8085_pipeline/ACC_8085.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_pipeline
+Z7 tCvgOpt 0
+n@a@c@c_8085
+vadder_8085
+R1
+!i10b 1
+!s100 Pa:UJdWK11>E4nmjQhe=D2
+Ij2j:anOe^g0^o433S@Nf^1
+R2
+R0
+w1617699556
+8/home/alex/verilog_codes/processor_8085_pipeline/adder_8085.v
+F/home/alex/verilog_codes/processor_8085_pipeline/adder_8085.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_pipeline/adder_8085.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_pipeline|/home/alex/verilog_codes/processor_8085_pipeline/adder_8085.v|
+!i113 1
+R5
+R6
+R7
+vALU_8085
+R1
+!i10b 1
+!s100 DP``<bBU?UohVPNk7c@eQ2
+IC6G=?=6bWPVW1VV_=NTBZ1
+R2
+R0
+w1621262301
+8/home/alex/verilog_codes/processor_8085_pipeline/ALU_8085.v
+F/home/alex/verilog_codes/processor_8085_pipeline/ALU_8085.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_pipeline/ALU_8085.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_pipeline|/home/alex/verilog_codes/processor_8085_pipeline/ALU_8085.v|
+!i113 1
+R5
+R6
+R7
+n@a@l@u_8085
+valucontrol_8085_single
+R1
+!i10b 1
+!s100 XEg]zfS8zQ3BYK`LhUWd42
+I]3LKTB0D4WTAKEM[>JKKf3
+R2
+R0
+w1617706241
+8/home/alex/verilog_codes/processor_8085_pipeline/alucontrol_8085_single.v
+F/home/alex/verilog_codes/processor_8085_pipeline/alucontrol_8085_single.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_pipeline/alucontrol_8085_single.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_pipeline|/home/alex/verilog_codes/processor_8085_pipeline/alucontrol_8085_single.v|
+!i113 1
+R5
+R6
+R7
+vcontroller_8085_single
+R1
+!i10b 1
+!s100 m:nPGh3efNa^mKSOKRQ<b2
+IenGkk<Pfbi;>3z[8o>E@_1
+R2
+R0
+w1621267907
+8/home/alex/verilog_codes/processor_8085_pipeline/controller_8085_single.v
+F/home/alex/verilog_codes/processor_8085_pipeline/controller_8085_single.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_pipeline/controller_8085_single.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_pipeline|/home/alex/verilog_codes/processor_8085_pipeline/controller_8085_single.v|
+!i113 1
+R5
+R6
+R7
+vDM_8085
+R1
+!i10b 1
+!s100 e2Pi0dh=A>H48m2daLeG61
+I[7Paf<0DXH?HHz159gEbH1
+R2
+R0
+w1620982788
+8/home/alex/verilog_codes/processor_8085_pipeline/DM_8085.v
+F/home/alex/verilog_codes/processor_8085_pipeline/DM_8085.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_pipeline/DM_8085.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_pipeline|/home/alex/verilog_codes/processor_8085_pipeline/DM_8085.v|
+!i113 1
+R5
+R6
+R7
+n@d@m_8085
+vflag
+R1
+!i10b 1
+!s100 <15;Y9^OhAoj;cUP4kMES1
+I[Y3iFXJi4_[30[G?=eRNb1
+R2
+R0
+w1619000738
+8/home/alex/verilog_codes/processor_8085_pipeline/flag.v
+F/home/alex/verilog_codes/processor_8085_pipeline/flag.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_pipeline/flag.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_pipeline|/home/alex/verilog_codes/processor_8085_pipeline/flag.v|
+!i113 1
+R5
+R6
+R7
+vgeneric_testbench_pipeline_8085
+R1
+!i10b 1
+!s100 goCB;0nf`@;7`T9g`6hTA1
+I2A1<9h:i@]oChNKCUz5oX3
+R2
+R0
+w1621351474
+8/home/alex/verilog_codes/processor_8085_pipeline/generic_testbench_pipeline_8085.v
+F/home/alex/verilog_codes/processor_8085_pipeline/generic_testbench_pipeline_8085.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_pipeline/generic_testbench_pipeline_8085.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_pipeline|/home/alex/verilog_codes/processor_8085_pipeline/generic_testbench_pipeline_8085.v|
+!i113 1
+R5
+R6
+R7
+vhazard_control_8085
+R1
+!i10b 1
+!s100 i7^9`1Cz6@FDK@a164R393
+IoPS`P93l=fe^K53JF7fWY0
+R2
+R0
+w1621329465
+8/home/alex/verilog_codes/processor_8085_pipeline/hazard_control_8085.v
+F/home/alex/verilog_codes/processor_8085_pipeline/hazard_control_8085.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_pipeline/hazard_control_8085.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_pipeline|/home/alex/verilog_codes/processor_8085_pipeline/hazard_control_8085.v|
+!i113 1
+R5
+R6
+R7
+vIM_8085
+R1
+!i10b 1
+!s100 NMlzUj]18g;:S16dm87]X2
+I0m3Yl55fWkGZF2fmG16g`2
+R2
+R0
+w1621504343
+8/home/alex/verilog_codes/processor_8085_pipeline/IM_8085.v
+F/home/alex/verilog_codes/processor_8085_pipeline/IM_8085.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_pipeline/IM_8085.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_pipeline|/home/alex/verilog_codes/processor_8085_pipeline/IM_8085.v|
+!i113 1
+R5
+R6
+R7
+n@i@m_8085
+vprocessor_8085_pipeline
+R1
+!i10b 1
+!s100 Pd3LcFi2mIk1hnz7iEl1n2
+IN:WX2fW9B7@J^bFFRiO8e2
+R2
+R0
+w1621352400
+8/home/alex/verilog_codes/processor_8085_pipeline/processor_8085_pipeline.v
+F/home/alex/verilog_codes/processor_8085_pipeline/processor_8085_pipeline.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_pipeline/processor_8085_pipeline.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_pipeline|/home/alex/verilog_codes/processor_8085_pipeline/processor_8085_pipeline.v|
+!i113 1
+R5
+R6
+R7
+vRF_8085_single
+R1
+!i10b 1
+!s100 ?9;BNQZ0cC69>]CdT>UGd3
+IRV2T=KR^W29kba9zUW=GR3
+R2
+R0
+w1619014679
+8/home/alex/verilog_codes/processor_8085_pipeline/RF_8085_single.v
+F/home/alex/verilog_codes/processor_8085_pipeline/RF_8085_single.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_pipeline/RF_8085_single.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_pipeline|/home/alex/verilog_codes/processor_8085_pipeline/RF_8085_single.v|
+!i113 1
+R5
+R6
+R7
+n@r@f_8085_single
