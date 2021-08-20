@@ -1,0 +1,6 @@
+MVIR B 8
+MVIR C 4
+ADD B
+DCR C
+JNZ -3
+HLT
