@@ -1,0 +1,50 @@
+`timescale 1ns/1ps
+module processor_8085_pipeline_tb5;
+reg clk;
+
+wire z,cy;
+
+integer i,j;
+processor_8085_pipeline p1(clk,cy,z);
+
+initial clk=1'b0;
+always #5 clk=~clk;
+
+
+
+
+initial
+begin
+for(i=1;i<=7;i=i+1)
+p1.RF1.regfile_8085[i-1]=i;
+end
+
+
+initial
+begin
+p1.IM1.IM[0]=16'h9805; //MVI B,20H
+p1.IM1.IM[1]=16'h9A01; //MVI C,30H
+p1.IM1.IM[2]=16'h9003; //ADD B
+p1.IM1.IM[3]=16'h0828; // ADD C
+p1.IM1.IM[4]=16'h87FD; // HALT
+p1.IM1.IM[5]=16'h2070;
+p1.IM1.IM[6]=16'hAB00;
+p1.IM1.IM[7]=16'hE000;
+p1.IM1.IM[8]=16'h0200;
+p1.IM1.IM[9]=16'h0B28;
+p1.IM1.IM[10]=16'h87FD;
+p1.IM1.IM[11]=16'hC200;
+p1.IM1.IM[12]=16'h2068;
+p1.pc=0;
+#2;
+
+for(j=0;j<180;j=j+1) begin
+$display(" %d %d %d %d %d ",p1.pc,p1.Accout,p1.RF1.regfile_8085[0],p1.RF1.regfile_8085[2],p1.RF1.regfile_8085[3]);
+#10;
+end
+end
+initial
+begin
+#1800 $stop;
+end
+endmodule

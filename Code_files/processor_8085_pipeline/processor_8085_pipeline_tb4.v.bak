@@ -1,0 +1,49 @@
+`timescale 1ns/1ps
+module processor_8085_pipeline_tb4;
+reg clk;
+
+wire z,cy;
+
+integer i,j;
+processor_8085_pipeline p1(clk,cy,z);
+
+initial clk=1'b0;
+always #5 clk=~clk;
+
+
+
+
+initial
+begin
+for(i=1;i<=7;i=i+1)
+p1.RF1.regfile_8085[i-1]=i;
+end
+
+
+initial
+begin
+p1.IM1.IM[0]=16'h9805; //MVI B,20H
+p1.IM1.IM[1]=16'hA900; //MVI C,30H
+p1.IM1.IM[2]=16'h0828; //ADD B
+p1.IM1.IM[3]=16'hAA00; // ADD C
+p1.IM1.IM[4]=16'hE000; // HALT
+p1.IM1.IM[5]=16'h0100;
+p1.IM1.IM[6]=16'h0A28;
+p1.IM1.IM[7]=16'h87FD;
+p1.IM1.IM[8]=16'hC100;
+p1.IM1.IM[9]=16'h0828;
+p1.IM1.IM[10]=16'h87F8;
+p1.IM1.IM[11]=16'h2070;
+p1.pc=0;
+#2;
+
+for(j=0;j<180;j=j+1) begin
+$display(" %d %d ",p1.Accout,p1.pc);
+#10;
+end
+end
+initial
+begin
+#1800 $stop;
+end
+endmodule

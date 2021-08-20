@@ -1,0 +1,12 @@
+module hazard_control_8085(IF_ID_IM_d,ID_EX_IM_d,EX_MEM_IM_d,MEM_WB_IM_d,Acc_select,RF_d1_select,cin_select,cy_select,z_select);
+input [15:0] IF_ID_IM_d,ID_EX_IM_d,EX_MEM_IM_d,MEM_WB_IM_d;
+output reg [3:0]  Acc_select,RF_d1_select;
+output reg [1:0] cin_select,cy_select,z_select;
+
+always @(*)
+begin
+if((EX_MEM_IM_d[15:11]==5'b01101)&&((IF_ID_IM_d[15:11]==5'b00000)||(IF_ID_IM_d[15:11]==5'b00010)||(IF_ID_IM_d[15:11]==5'b00101)||(IF_ID_IM_d[15:11]==5'b00110)||(IF_ID_IM_d[15:11]==5'b00111)||(IF_ID_IM_d[15:11]==5'b01000)||(IF_ID_IM_d[15:11]==5'b01001)||(IF_ID_IM_d[15:11]==5'b01010)||(IF_ID_IM_d[15:11]==5'b01011)||(IF_ID_IM_d[15:11]==5'b01100)||(IF_ID_IM_d[15:11]==5'b11000)||(IF_ID_IM_d[15:11]==5'b11011)||(IF_ID_IM_d[15:11]==5'b00100)))
+//first instr is lda and other is which depend on Acc
+Acc_select=4'b0001;
+else if(
+
