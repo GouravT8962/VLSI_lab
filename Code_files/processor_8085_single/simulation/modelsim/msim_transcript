@@ -1,0 +1,564 @@
+# ERROR: No extended dataflow license exists
+# do processor_8085_single_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/alex/intelFPGA/18.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_single {/home/alex/verilog_codes/processor_8085_single/flag.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:05:38 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_single" /home/alex/verilog_codes/processor_8085_single/flag.v 
+# -- Compiling module flag
+# 
+# Top level modules:
+# 	flag
+# End time: 15:05:38 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_single {/home/alex/verilog_codes/processor_8085_single/ALU_8085.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:05:38 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_single" /home/alex/verilog_codes/processor_8085_single/ALU_8085.v 
+# -- Compiling module ALU_8085
+# 
+# Top level modules:
+# 	ALU_8085
+# End time: 15:05:39 on May 20,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_single {/home/alex/verilog_codes/processor_8085_single/alucontrol_8085_single.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:05:39 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_single" /home/alex/verilog_codes/processor_8085_single/alucontrol_8085_single.v 
+# -- Compiling module alucontrol_8085_single
+# 
+# Top level modules:
+# 	alucontrol_8085_single
+# End time: 15:05:39 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_single {/home/alex/verilog_codes/processor_8085_single/processor_8085_single.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:05:39 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_single" /home/alex/verilog_codes/processor_8085_single/processor_8085_single.v 
+# -- Compiling module processor_8085_single
+# 
+# Top level modules:
+# 	processor_8085_single
+# End time: 15:05:39 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_single {/home/alex/verilog_codes/processor_8085_single/RF_8085_single.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:05:39 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_single" /home/alex/verilog_codes/processor_8085_single/RF_8085_single.v 
+# -- Compiling module RF_8085_single
+# 
+# Top level modules:
+# 	RF_8085_single
+# End time: 15:05:39 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_single {/home/alex/verilog_codes/processor_8085_single/adder_8085.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:05:39 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_single" /home/alex/verilog_codes/processor_8085_single/adder_8085.v 
+# -- Compiling module adder_8085
+# 
+# Top level modules:
+# 	adder_8085
+# End time: 15:05:39 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_single {/home/alex/verilog_codes/processor_8085_single/DM_8085.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:05:39 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_single" /home/alex/verilog_codes/processor_8085_single/DM_8085.v 
+# -- Compiling module DM_8085
+# 
+# Top level modules:
+# 	DM_8085
+# End time: 15:05:39 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_single {/home/alex/verilog_codes/processor_8085_single/ACC_8085.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:05:39 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_single" /home/alex/verilog_codes/processor_8085_single/ACC_8085.v 
+# -- Compiling module ACC_8085
+# 
+# Top level modules:
+# 	ACC_8085
+# End time: 15:05:39 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_single {/home/alex/verilog_codes/processor_8085_single/controller_8085_single.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:05:39 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_single" /home/alex/verilog_codes/processor_8085_single/controller_8085_single.v 
+# -- Compiling module controller_8085_single
+# 
+# Top level modules:
+# 	controller_8085_single
+# End time: 15:05:39 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_single/db {/home/alex/verilog_codes/processor_8085_single/db/pll_8085_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:05:39 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_single/db" /home/alex/verilog_codes/processor_8085_single/db/pll_8085_altpll.v 
+# -- Compiling module pll_8085_altpll
+# 
+# Top level modules:
+# 	pll_8085_altpll
+# End time: 15:05:39 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_single {/home/alex/verilog_codes/processor_8085_single/IM_8085.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:05:39 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_single" /home/alex/verilog_codes/processor_8085_single/IM_8085.v 
+# -- Compiling module IM_8085
+# 
+# Top level modules:
+# 	IM_8085
+# End time: 15:05:39 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/alex/verilog_codes/processor_8085_single/pll_8085.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:05:39 on May 20,2021
+# vcom -reportprogress 300 -93 -work work /home/alex/verilog_codes/processor_8085_single/pll_8085.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pll_8085
+# -- Compiling architecture SYN of pll_8085
+# End time: 15:05:39 on May 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_single {/home/alex/verilog_codes/processor_8085_single/generic_testbench_single_8085.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:05:39 on May 20,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/alex/verilog_codes/processor_8085_single" /home/alex/verilog_codes/processor_8085_single/generic_testbench_single_8085.v 
+# -- Compiling module generic_testbench_single_8085
+# 
+# Top level modules:
+# 	generic_testbench_single_8085
+# End time: 15:05:40 on May 20,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  generic_testbench_single_8085
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" generic_testbench_single_8085 
+# Start time: 15:05:40 on May 20,2021
+# Loading work.generic_testbench_single_8085
+# Loading work.processor_8085_single
+# Loading work.IM_8085
+# Loading work.adder_8085
+# Loading work.ALU_8085
+# Loading work.DM_8085
+# Loading work.RF_8085_single
+# Loading work.ACC_8085
+# Loading work.flag
+# Loading work.alucontrol_8085_single
+# Loading work.controller_8085_single
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pll_8085(syn)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.mf_pllpack(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altpll(behavior)
+# Loading altera_mf.mf_cycloneiii_pll(vital_pll)
+# Loading altera_mf.mf_cda_mn_cntr(behave)
+# Loading altera_mf.mf_cda_scale_cntr(behave)
+# ** Warning: Design size of 12968 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# time:                   2	,pc:  0	,ACC:  0,	B:  0,	C:  0,	D:  0,	E:  0,	H:  0,	L:  0, cy: 0, z: 0, DM[11]:   110, DM[18]:   180
+# time:                  42	,pc:  0	,ACC:  0,	B:  0,	C:  0,	D:  0,	E:  0,	H:  0,	L:  0, cy: 0, z: 0, DM[11]:   110, DM[18]:   180
+# ** Note: Cyclone IV E PLL locked to incoming clock
+#    Time: 55 ns  Iteration: 3  Instance: /generic_testbench_single_8085/p1/pll/altpll_component/CYCLONEIII_ALTPLL/M5
+# time:                  82	,pc:  1	,ACC:  0,	B:  0,	C:  8,	D:  0,	E:  0,	H:  0,	L:  0, cy: 0, z: 0, DM[11]:   110, DM[18]:   180
+# time:                 122	,pc:  2	,ACC:  0,	B:  0,	C:  7,	D:  0,	E:  0,	H:  0,	L:  0, cy: 0, z: 0, DM[11]:   110, DM[18]:   180
+# time:                 162	,pc:  3	,ACC:  0,	B:  0,	C:  7,	D:  7,	E:  0,	H:  0,	L:  0, cy: 0, z: 0, DM[11]:   110, DM[18]:   180
+# time:                 202	,pc:  4	,ACC:  0,	B:  0,	C:  7,	D:  7,	E:  0,	H: 11,	L:  0, cy: 0, z: 0, DM[11]:   110, DM[18]:   180
+# time:                 242	,pc:  5	,ACC:110,	B:  0,	C:  7,	D:  7,	E:  0,	H: 11,	L:  0, cy: 0, z: 0, DM[11]:   110, DM[18]:   180
+# time:                 282	,pc:  6	,ACC:110,	B:  0,	C:  7,	D:  7,	E:  0,	H: 12,	L:  0, cy: 0, z: 0, DM[11]:   110, DM[18]:   180
+# time:                 322	,pc:  7	,ACC:110,	B:  0,	C:  7,	D:  7,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   110, DM[18]:   180
+# time:                 362	,pc:  8	,ACC:110,	B:  0,	C:  7,	D:  7,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   110, DM[18]:   180
+# time:                 402	,pc:  9	,ACC:110,	B:120,	C:  7,	D:  7,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   110, DM[18]:   180
+# time:                 442	,pc: 10	,ACC:110,	B:120,	C:  7,	D:  7,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   110, DM[18]:   180
+# time:                 482	,pc: 11	,ACC:110,	B:120,	C:  7,	D:  7,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   110, DM[18]:   180
+# time:                 522	,pc: 12	,ACC:110,	B:120,	C:  7,	D:  7,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                 562	,pc: 13	,ACC:110,	B:120,	C:  7,	D:  7,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                 602	,pc: 14	,ACC:110,	B:120,	C:  7,	D:  6,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                 642	,pc:  4	,ACC:110,	B:120,	C:  7,	D:  6,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                 682	,pc:  5	,ACC:110,	B:120,	C:  7,	D:  6,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                 722	,pc:  6	,ACC:110,	B:120,	C:  7,	D:  6,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                 762	,pc:  7	,ACC:110,	B:120,	C:  7,	D:  6,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                 802	,pc:  8	,ACC:110,	B:120,	C:  7,	D:  6,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                 842	,pc:  9	,ACC:110,	B:130,	C:  7,	D:  6,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                 882	,pc: 10	,ACC:110,	B:130,	C:  7,	D:  6,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                 922	,pc: 11	,ACC:110,	B:130,	C:  7,	D:  6,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                 962	,pc: 12	,ACC:110,	B:130,	C:  7,	D:  6,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1002	,pc: 13	,ACC:110,	B:130,	C:  7,	D:  6,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1042	,pc: 14	,ACC:110,	B:130,	C:  7,	D:  5,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1082	,pc:  4	,ACC:110,	B:130,	C:  7,	D:  5,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1122	,pc:  5	,ACC:110,	B:130,	C:  7,	D:  5,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1162	,pc:  6	,ACC:110,	B:130,	C:  7,	D:  5,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1202	,pc:  7	,ACC:110,	B:130,	C:  7,	D:  5,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1242	,pc:  8	,ACC:110,	B:130,	C:  7,	D:  5,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1282	,pc:  9	,ACC:110,	B:140,	C:  7,	D:  5,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1322	,pc: 10	,ACC:110,	B:140,	C:  7,	D:  5,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1362	,pc: 11	,ACC:110,	B:140,	C:  7,	D:  5,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1402	,pc: 12	,ACC:110,	B:140,	C:  7,	D:  5,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1442	,pc: 13	,ACC:110,	B:140,	C:  7,	D:  5,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1482	,pc: 14	,ACC:110,	B:140,	C:  7,	D:  4,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1522	,pc:  4	,ACC:110,	B:140,	C:  7,	D:  4,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1562	,pc:  5	,ACC:110,	B:140,	C:  7,	D:  4,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1602	,pc:  6	,ACC:110,	B:140,	C:  7,	D:  4,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1642	,pc:  7	,ACC:110,	B:140,	C:  7,	D:  4,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1682	,pc:  8	,ACC:110,	B:140,	C:  7,	D:  4,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1722	,pc:  9	,ACC:110,	B:150,	C:  7,	D:  4,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1762	,pc: 10	,ACC:110,	B:150,	C:  7,	D:  4,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1802	,pc: 11	,ACC:110,	B:150,	C:  7,	D:  4,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1842	,pc: 12	,ACC:110,	B:150,	C:  7,	D:  4,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1882	,pc: 13	,ACC:110,	B:150,	C:  7,	D:  4,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1922	,pc: 14	,ACC:110,	B:150,	C:  7,	D:  3,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                1962	,pc:  4	,ACC:110,	B:150,	C:  7,	D:  3,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2002	,pc:  5	,ACC:110,	B:150,	C:  7,	D:  3,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2042	,pc:  6	,ACC:110,	B:150,	C:  7,	D:  3,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2082	,pc:  7	,ACC:110,	B:150,	C:  7,	D:  3,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2122	,pc:  8	,ACC:110,	B:150,	C:  7,	D:  3,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2162	,pc:  9	,ACC:110,	B:160,	C:  7,	D:  3,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2202	,pc: 10	,ACC:110,	B:160,	C:  7,	D:  3,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2242	,pc: 11	,ACC:110,	B:160,	C:  7,	D:  3,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2282	,pc: 12	,ACC:110,	B:160,	C:  7,	D:  3,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2322	,pc: 13	,ACC:110,	B:160,	C:  7,	D:  3,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2362	,pc: 14	,ACC:110,	B:160,	C:  7,	D:  2,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2402	,pc:  4	,ACC:110,	B:160,	C:  7,	D:  2,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2442	,pc:  5	,ACC:110,	B:160,	C:  7,	D:  2,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2482	,pc:  6	,ACC:110,	B:160,	C:  7,	D:  2,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2522	,pc:  7	,ACC:110,	B:160,	C:  7,	D:  2,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2562	,pc:  8	,ACC:110,	B:160,	C:  7,	D:  2,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2602	,pc:  9	,ACC:110,	B:170,	C:  7,	D:  2,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2642	,pc: 10	,ACC:110,	B:170,	C:  7,	D:  2,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2682	,pc: 11	,ACC:110,	B:170,	C:  7,	D:  2,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2722	,pc: 12	,ACC:110,	B:170,	C:  7,	D:  2,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2762	,pc: 13	,ACC:110,	B:170,	C:  7,	D:  2,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2802	,pc: 14	,ACC:110,	B:170,	C:  7,	D:  1,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2842	,pc:  4	,ACC:110,	B:170,	C:  7,	D:  1,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2882	,pc:  5	,ACC:110,	B:170,	C:  7,	D:  1,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2922	,pc:  6	,ACC:110,	B:170,	C:  7,	D:  1,	E:  0,	H: 18,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                2962	,pc:  7	,ACC:110,	B:170,	C:  7,	D:  1,	E:  0,	H: 18,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                3002	,pc:  8	,ACC:110,	B:170,	C:  7,	D:  1,	E:  0,	H: 18,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                3042	,pc:  9	,ACC:110,	B:180,	C:  7,	D:  1,	E:  0,	H: 18,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   180
+# time:                3082	,pc: 10	,ACC:110,	B:180,	C:  7,	D:  1,	E:  0,	H: 18,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   110
+# time:                3122	,pc: 11	,ACC:110,	B:180,	C:  7,	D:  1,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   110
+# time:                3162	,pc: 12	,ACC:110,	B:180,	C:  7,	D:  1,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   110
+# time:                3202	,pc: 13	,ACC:110,	B:180,	C:  7,	D:  1,	E:  0,	H: 18,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   110
+# time:                3242	,pc: 14	,ACC:110,	B:180,	C:  7,	D:  0,	E:  0,	H: 18,	L:  0, cy: 1, z: 1, DM[11]:   120, DM[18]:   110
+# time:                3282	,pc: 15	,ACC:110,	B:180,	C:  7,	D:  0,	E:  0,	H: 18,	L:  0, cy: 1, z: 1, DM[11]:   120, DM[18]:   110
+# time:                3322	,pc: 16	,ACC:110,	B:180,	C:  6,	D:  0,	E:  0,	H: 18,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   110
+# time:                3362	,pc:  2	,ACC:110,	B:180,	C:  6,	D:  0,	E:  0,	H: 18,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   110
+# time:                3402	,pc:  3	,ACC:110,	B:180,	C:  6,	D:  6,	E:  0,	H: 18,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   110
+# time:                3442	,pc:  4	,ACC:110,	B:180,	C:  6,	D:  6,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   110
+# time:                3482	,pc:  5	,ACC:120,	B:180,	C:  6,	D:  6,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   110
+# time:                3522	,pc:  6	,ACC:120,	B:180,	C:  6,	D:  6,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   110
+# time:                3562	,pc:  7	,ACC:120,	B:180,	C:  6,	D:  6,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   110
+# time:                3602	,pc:  8	,ACC:120,	B:180,	C:  6,	D:  6,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   110
+# time:                3642	,pc:  9	,ACC:120,	B:130,	C:  6,	D:  6,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   110
+# time:                3682	,pc: 10	,ACC:120,	B:130,	C:  6,	D:  6,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   110
+# time:                3722	,pc: 11	,ACC:120,	B:130,	C:  6,	D:  6,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   120, DM[18]:   110
+# time:                3762	,pc: 12	,ACC:120,	B:130,	C:  6,	D:  6,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                3802	,pc: 13	,ACC:120,	B:130,	C:  6,	D:  6,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                3842	,pc: 14	,ACC:120,	B:130,	C:  6,	D:  5,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                3882	,pc:  4	,ACC:120,	B:130,	C:  6,	D:  5,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                3922	,pc:  5	,ACC:120,	B:130,	C:  6,	D:  5,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                3962	,pc:  6	,ACC:120,	B:130,	C:  6,	D:  5,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4002	,pc:  7	,ACC:120,	B:130,	C:  6,	D:  5,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4042	,pc:  8	,ACC:120,	B:130,	C:  6,	D:  5,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4082	,pc:  9	,ACC:120,	B:140,	C:  6,	D:  5,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4122	,pc: 10	,ACC:120,	B:140,	C:  6,	D:  5,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4162	,pc: 11	,ACC:120,	B:140,	C:  6,	D:  5,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4202	,pc: 12	,ACC:120,	B:140,	C:  6,	D:  5,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4242	,pc: 13	,ACC:120,	B:140,	C:  6,	D:  5,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4282	,pc: 14	,ACC:120,	B:140,	C:  6,	D:  4,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4322	,pc:  4	,ACC:120,	B:140,	C:  6,	D:  4,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4362	,pc:  5	,ACC:120,	B:140,	C:  6,	D:  4,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4402	,pc:  6	,ACC:120,	B:140,	C:  6,	D:  4,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4442	,pc:  7	,ACC:120,	B:140,	C:  6,	D:  4,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4482	,pc:  8	,ACC:120,	B:140,	C:  6,	D:  4,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4522	,pc:  9	,ACC:120,	B:150,	C:  6,	D:  4,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4562	,pc: 10	,ACC:120,	B:150,	C:  6,	D:  4,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4602	,pc: 11	,ACC:120,	B:150,	C:  6,	D:  4,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4642	,pc: 12	,ACC:120,	B:150,	C:  6,	D:  4,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4682	,pc: 13	,ACC:120,	B:150,	C:  6,	D:  4,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4722	,pc: 14	,ACC:120,	B:150,	C:  6,	D:  3,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4762	,pc:  4	,ACC:120,	B:150,	C:  6,	D:  3,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4802	,pc:  5	,ACC:120,	B:150,	C:  6,	D:  3,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4842	,pc:  6	,ACC:120,	B:150,	C:  6,	D:  3,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4882	,pc:  7	,ACC:120,	B:150,	C:  6,	D:  3,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4922	,pc:  8	,ACC:120,	B:150,	C:  6,	D:  3,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                4962	,pc:  9	,ACC:120,	B:160,	C:  6,	D:  3,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5002	,pc: 10	,ACC:120,	B:160,	C:  6,	D:  3,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5042	,pc: 11	,ACC:120,	B:160,	C:  6,	D:  3,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5082	,pc: 12	,ACC:120,	B:160,	C:  6,	D:  3,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5122	,pc: 13	,ACC:120,	B:160,	C:  6,	D:  3,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5162	,pc: 14	,ACC:120,	B:160,	C:  6,	D:  2,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5202	,pc:  4	,ACC:120,	B:160,	C:  6,	D:  2,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5242	,pc:  5	,ACC:120,	B:160,	C:  6,	D:  2,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5282	,pc:  6	,ACC:120,	B:160,	C:  6,	D:  2,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5322	,pc:  7	,ACC:120,	B:160,	C:  6,	D:  2,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5362	,pc:  8	,ACC:120,	B:160,	C:  6,	D:  2,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5402	,pc:  9	,ACC:120,	B:170,	C:  6,	D:  2,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5442	,pc: 10	,ACC:120,	B:170,	C:  6,	D:  2,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5482	,pc: 11	,ACC:120,	B:170,	C:  6,	D:  2,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5522	,pc: 12	,ACC:120,	B:170,	C:  6,	D:  2,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5562	,pc: 13	,ACC:120,	B:170,	C:  6,	D:  2,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5602	,pc: 14	,ACC:120,	B:170,	C:  6,	D:  1,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5642	,pc:  4	,ACC:120,	B:170,	C:  6,	D:  1,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5682	,pc:  5	,ACC:120,	B:170,	C:  6,	D:  1,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5722	,pc:  6	,ACC:120,	B:170,	C:  6,	D:  1,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5762	,pc:  7	,ACC:120,	B:170,	C:  6,	D:  1,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5802	,pc:  8	,ACC:120,	B:170,	C:  6,	D:  1,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5842	,pc:  9	,ACC:120,	B:180,	C:  6,	D:  1,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5882	,pc: 10	,ACC:120,	B:180,	C:  6,	D:  1,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5922	,pc: 11	,ACC:120,	B:180,	C:  6,	D:  1,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                5962	,pc: 12	,ACC:120,	B:180,	C:  6,	D:  1,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                6002	,pc: 13	,ACC:120,	B:180,	C:  6,	D:  1,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                6042	,pc: 14	,ACC:120,	B:180,	C:  6,	D:  0,	E:  0,	H: 17,	L:  0, cy: 1, z: 1, DM[11]:   130, DM[18]:   110
+# time:                6082	,pc: 15	,ACC:120,	B:180,	C:  6,	D:  0,	E:  0,	H: 17,	L:  0, cy: 1, z: 1, DM[11]:   130, DM[18]:   110
+# time:                6122	,pc: 16	,ACC:120,	B:180,	C:  5,	D:  0,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                6162	,pc:  2	,ACC:120,	B:180,	C:  5,	D:  0,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                6202	,pc:  3	,ACC:120,	B:180,	C:  5,	D:  5,	E:  0,	H: 17,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                6242	,pc:  4	,ACC:120,	B:180,	C:  5,	D:  5,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                6282	,pc:  5	,ACC:130,	B:180,	C:  5,	D:  5,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                6322	,pc:  6	,ACC:130,	B:180,	C:  5,	D:  5,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                6362	,pc:  7	,ACC:130,	B:180,	C:  5,	D:  5,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                6402	,pc:  8	,ACC:130,	B:180,	C:  5,	D:  5,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                6442	,pc:  9	,ACC:130,	B:140,	C:  5,	D:  5,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                6482	,pc: 10	,ACC:130,	B:140,	C:  5,	D:  5,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                6522	,pc: 11	,ACC:130,	B:140,	C:  5,	D:  5,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   130, DM[18]:   110
+# time:                6562	,pc: 12	,ACC:130,	B:140,	C:  5,	D:  5,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                6602	,pc: 13	,ACC:130,	B:140,	C:  5,	D:  5,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                6642	,pc: 14	,ACC:130,	B:140,	C:  5,	D:  4,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                6682	,pc:  4	,ACC:130,	B:140,	C:  5,	D:  4,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                6722	,pc:  5	,ACC:130,	B:140,	C:  5,	D:  4,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                6762	,pc:  6	,ACC:130,	B:140,	C:  5,	D:  4,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                6802	,pc:  7	,ACC:130,	B:140,	C:  5,	D:  4,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                6842	,pc:  8	,ACC:130,	B:140,	C:  5,	D:  4,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                6882	,pc:  9	,ACC:130,	B:150,	C:  5,	D:  4,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                6922	,pc: 10	,ACC:130,	B:150,	C:  5,	D:  4,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                6962	,pc: 11	,ACC:130,	B:150,	C:  5,	D:  4,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7002	,pc: 12	,ACC:130,	B:150,	C:  5,	D:  4,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7042	,pc: 13	,ACC:130,	B:150,	C:  5,	D:  4,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7082	,pc: 14	,ACC:130,	B:150,	C:  5,	D:  3,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7122	,pc:  4	,ACC:130,	B:150,	C:  5,	D:  3,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7162	,pc:  5	,ACC:130,	B:150,	C:  5,	D:  3,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7202	,pc:  6	,ACC:130,	B:150,	C:  5,	D:  3,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7242	,pc:  7	,ACC:130,	B:150,	C:  5,	D:  3,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7282	,pc:  8	,ACC:130,	B:150,	C:  5,	D:  3,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7322	,pc:  9	,ACC:130,	B:160,	C:  5,	D:  3,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7362	,pc: 10	,ACC:130,	B:160,	C:  5,	D:  3,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7402	,pc: 11	,ACC:130,	B:160,	C:  5,	D:  3,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7442	,pc: 12	,ACC:130,	B:160,	C:  5,	D:  3,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7482	,pc: 13	,ACC:130,	B:160,	C:  5,	D:  3,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7522	,pc: 14	,ACC:130,	B:160,	C:  5,	D:  2,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7562	,pc:  4	,ACC:130,	B:160,	C:  5,	D:  2,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7602	,pc:  5	,ACC:130,	B:160,	C:  5,	D:  2,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7642	,pc:  6	,ACC:130,	B:160,	C:  5,	D:  2,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7682	,pc:  7	,ACC:130,	B:160,	C:  5,	D:  2,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7722	,pc:  8	,ACC:130,	B:160,	C:  5,	D:  2,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7762	,pc:  9	,ACC:130,	B:170,	C:  5,	D:  2,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7802	,pc: 10	,ACC:130,	B:170,	C:  5,	D:  2,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7842	,pc: 11	,ACC:130,	B:170,	C:  5,	D:  2,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7882	,pc: 12	,ACC:130,	B:170,	C:  5,	D:  2,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7922	,pc: 13	,ACC:130,	B:170,	C:  5,	D:  2,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                7962	,pc: 14	,ACC:130,	B:170,	C:  5,	D:  1,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8002	,pc:  4	,ACC:130,	B:170,	C:  5,	D:  1,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8042	,pc:  5	,ACC:130,	B:170,	C:  5,	D:  1,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8082	,pc:  6	,ACC:130,	B:170,	C:  5,	D:  1,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8122	,pc:  7	,ACC:130,	B:170,	C:  5,	D:  1,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8162	,pc:  8	,ACC:130,	B:170,	C:  5,	D:  1,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8202	,pc:  9	,ACC:130,	B:180,	C:  5,	D:  1,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8242	,pc: 10	,ACC:130,	B:180,	C:  5,	D:  1,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8282	,pc: 11	,ACC:130,	B:180,	C:  5,	D:  1,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8322	,pc: 12	,ACC:130,	B:180,	C:  5,	D:  1,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8362	,pc: 13	,ACC:130,	B:180,	C:  5,	D:  1,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8402	,pc: 14	,ACC:130,	B:180,	C:  5,	D:  0,	E:  0,	H: 16,	L:  0, cy: 1, z: 1, DM[11]:   140, DM[18]:   110
+# time:                8442	,pc: 15	,ACC:130,	B:180,	C:  5,	D:  0,	E:  0,	H: 16,	L:  0, cy: 1, z: 1, DM[11]:   140, DM[18]:   110
+# time:                8482	,pc: 16	,ACC:130,	B:180,	C:  4,	D:  0,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8522	,pc:  2	,ACC:130,	B:180,	C:  4,	D:  0,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8562	,pc:  3	,ACC:130,	B:180,	C:  4,	D:  4,	E:  0,	H: 16,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8602	,pc:  4	,ACC:130,	B:180,	C:  4,	D:  4,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8642	,pc:  5	,ACC:140,	B:180,	C:  4,	D:  4,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8682	,pc:  6	,ACC:140,	B:180,	C:  4,	D:  4,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8722	,pc:  7	,ACC:140,	B:180,	C:  4,	D:  4,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8762	,pc:  8	,ACC:140,	B:180,	C:  4,	D:  4,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8802	,pc:  9	,ACC:140,	B:150,	C:  4,	D:  4,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8842	,pc: 10	,ACC:140,	B:150,	C:  4,	D:  4,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8882	,pc: 11	,ACC:140,	B:150,	C:  4,	D:  4,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   140, DM[18]:   110
+# time:                8922	,pc: 12	,ACC:140,	B:150,	C:  4,	D:  4,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                8962	,pc: 13	,ACC:140,	B:150,	C:  4,	D:  4,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9002	,pc: 14	,ACC:140,	B:150,	C:  4,	D:  3,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9042	,pc:  4	,ACC:140,	B:150,	C:  4,	D:  3,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9082	,pc:  5	,ACC:140,	B:150,	C:  4,	D:  3,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9122	,pc:  6	,ACC:140,	B:150,	C:  4,	D:  3,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9162	,pc:  7	,ACC:140,	B:150,	C:  4,	D:  3,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9202	,pc:  8	,ACC:140,	B:150,	C:  4,	D:  3,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9242	,pc:  9	,ACC:140,	B:160,	C:  4,	D:  3,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9282	,pc: 10	,ACC:140,	B:160,	C:  4,	D:  3,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9322	,pc: 11	,ACC:140,	B:160,	C:  4,	D:  3,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9362	,pc: 12	,ACC:140,	B:160,	C:  4,	D:  3,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9402	,pc: 13	,ACC:140,	B:160,	C:  4,	D:  3,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9442	,pc: 14	,ACC:140,	B:160,	C:  4,	D:  2,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9482	,pc:  4	,ACC:140,	B:160,	C:  4,	D:  2,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9522	,pc:  5	,ACC:140,	B:160,	C:  4,	D:  2,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9562	,pc:  6	,ACC:140,	B:160,	C:  4,	D:  2,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9602	,pc:  7	,ACC:140,	B:160,	C:  4,	D:  2,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9642	,pc:  8	,ACC:140,	B:160,	C:  4,	D:  2,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9682	,pc:  9	,ACC:140,	B:170,	C:  4,	D:  2,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9722	,pc: 10	,ACC:140,	B:170,	C:  4,	D:  2,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9762	,pc: 11	,ACC:140,	B:170,	C:  4,	D:  2,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9802	,pc: 12	,ACC:140,	B:170,	C:  4,	D:  2,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9842	,pc: 13	,ACC:140,	B:170,	C:  4,	D:  2,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9882	,pc: 14	,ACC:140,	B:170,	C:  4,	D:  1,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9922	,pc:  4	,ACC:140,	B:170,	C:  4,	D:  1,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:                9962	,pc:  5	,ACC:140,	B:170,	C:  4,	D:  1,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10002	,pc:  6	,ACC:140,	B:170,	C:  4,	D:  1,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10042	,pc:  7	,ACC:140,	B:170,	C:  4,	D:  1,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10082	,pc:  8	,ACC:140,	B:170,	C:  4,	D:  1,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10122	,pc:  9	,ACC:140,	B:180,	C:  4,	D:  1,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10162	,pc: 10	,ACC:140,	B:180,	C:  4,	D:  1,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10202	,pc: 11	,ACC:140,	B:180,	C:  4,	D:  1,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10242	,pc: 12	,ACC:140,	B:180,	C:  4,	D:  1,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10282	,pc: 13	,ACC:140,	B:180,	C:  4,	D:  1,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10322	,pc: 14	,ACC:140,	B:180,	C:  4,	D:  0,	E:  0,	H: 15,	L:  0, cy: 1, z: 1, DM[11]:   150, DM[18]:   110
+# time:               10362	,pc: 15	,ACC:140,	B:180,	C:  4,	D:  0,	E:  0,	H: 15,	L:  0, cy: 1, z: 1, DM[11]:   150, DM[18]:   110
+# time:               10402	,pc: 16	,ACC:140,	B:180,	C:  3,	D:  0,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10442	,pc:  2	,ACC:140,	B:180,	C:  3,	D:  0,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10482	,pc:  3	,ACC:140,	B:180,	C:  3,	D:  3,	E:  0,	H: 15,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10522	,pc:  4	,ACC:140,	B:180,	C:  3,	D:  3,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10562	,pc:  5	,ACC:150,	B:180,	C:  3,	D:  3,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10602	,pc:  6	,ACC:150,	B:180,	C:  3,	D:  3,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10642	,pc:  7	,ACC:150,	B:180,	C:  3,	D:  3,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10682	,pc:  8	,ACC:150,	B:180,	C:  3,	D:  3,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10722	,pc:  9	,ACC:150,	B:160,	C:  3,	D:  3,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10762	,pc: 10	,ACC:150,	B:160,	C:  3,	D:  3,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10802	,pc: 11	,ACC:150,	B:160,	C:  3,	D:  3,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   150, DM[18]:   110
+# time:               10842	,pc: 12	,ACC:150,	B:160,	C:  3,	D:  3,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               10882	,pc: 13	,ACC:150,	B:160,	C:  3,	D:  3,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               10922	,pc: 14	,ACC:150,	B:160,	C:  3,	D:  2,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               10962	,pc:  4	,ACC:150,	B:160,	C:  3,	D:  2,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11002	,pc:  5	,ACC:150,	B:160,	C:  3,	D:  2,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11042	,pc:  6	,ACC:150,	B:160,	C:  3,	D:  2,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11082	,pc:  7	,ACC:150,	B:160,	C:  3,	D:  2,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11122	,pc:  8	,ACC:150,	B:160,	C:  3,	D:  2,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11162	,pc:  9	,ACC:150,	B:170,	C:  3,	D:  2,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11202	,pc: 10	,ACC:150,	B:170,	C:  3,	D:  2,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11242	,pc: 11	,ACC:150,	B:170,	C:  3,	D:  2,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11282	,pc: 12	,ACC:150,	B:170,	C:  3,	D:  2,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11322	,pc: 13	,ACC:150,	B:170,	C:  3,	D:  2,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11362	,pc: 14	,ACC:150,	B:170,	C:  3,	D:  1,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11402	,pc:  4	,ACC:150,	B:170,	C:  3,	D:  1,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11442	,pc:  5	,ACC:150,	B:170,	C:  3,	D:  1,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11482	,pc:  6	,ACC:150,	B:170,	C:  3,	D:  1,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11522	,pc:  7	,ACC:150,	B:170,	C:  3,	D:  1,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11562	,pc:  8	,ACC:150,	B:170,	C:  3,	D:  1,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11602	,pc:  9	,ACC:150,	B:180,	C:  3,	D:  1,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11642	,pc: 10	,ACC:150,	B:180,	C:  3,	D:  1,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11682	,pc: 11	,ACC:150,	B:180,	C:  3,	D:  1,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11722	,pc: 12	,ACC:150,	B:180,	C:  3,	D:  1,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11762	,pc: 13	,ACC:150,	B:180,	C:  3,	D:  1,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11802	,pc: 14	,ACC:150,	B:180,	C:  3,	D:  0,	E:  0,	H: 14,	L:  0, cy: 1, z: 1, DM[11]:   160, DM[18]:   110
+# time:               11842	,pc: 15	,ACC:150,	B:180,	C:  3,	D:  0,	E:  0,	H: 14,	L:  0, cy: 1, z: 1, DM[11]:   160, DM[18]:   110
+# time:               11882	,pc: 16	,ACC:150,	B:180,	C:  2,	D:  0,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11922	,pc:  2	,ACC:150,	B:180,	C:  2,	D:  0,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               11962	,pc:  3	,ACC:150,	B:180,	C:  2,	D:  2,	E:  0,	H: 14,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               12002	,pc:  4	,ACC:150,	B:180,	C:  2,	D:  2,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               12042	,pc:  5	,ACC:160,	B:180,	C:  2,	D:  2,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               12082	,pc:  6	,ACC:160,	B:180,	C:  2,	D:  2,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               12122	,pc:  7	,ACC:160,	B:180,	C:  2,	D:  2,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               12162	,pc:  8	,ACC:160,	B:180,	C:  2,	D:  2,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               12202	,pc:  9	,ACC:160,	B:170,	C:  2,	D:  2,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               12242	,pc: 10	,ACC:160,	B:170,	C:  2,	D:  2,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               12282	,pc: 11	,ACC:160,	B:170,	C:  2,	D:  2,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   160, DM[18]:   110
+# time:               12322	,pc: 12	,ACC:160,	B:170,	C:  2,	D:  2,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               12362	,pc: 13	,ACC:160,	B:170,	C:  2,	D:  2,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               12402	,pc: 14	,ACC:160,	B:170,	C:  2,	D:  1,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               12442	,pc:  4	,ACC:160,	B:170,	C:  2,	D:  1,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               12482	,pc:  5	,ACC:160,	B:170,	C:  2,	D:  1,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               12522	,pc:  6	,ACC:160,	B:170,	C:  2,	D:  1,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               12562	,pc:  7	,ACC:160,	B:170,	C:  2,	D:  1,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               12602	,pc:  8	,ACC:160,	B:170,	C:  2,	D:  1,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               12642	,pc:  9	,ACC:160,	B:180,	C:  2,	D:  1,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               12682	,pc: 10	,ACC:160,	B:180,	C:  2,	D:  1,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               12722	,pc: 11	,ACC:160,	B:180,	C:  2,	D:  1,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               12762	,pc: 12	,ACC:160,	B:180,	C:  2,	D:  1,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               12802	,pc: 13	,ACC:160,	B:180,	C:  2,	D:  1,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               12842	,pc: 14	,ACC:160,	B:180,	C:  2,	D:  0,	E:  0,	H: 13,	L:  0, cy: 1, z: 1, DM[11]:   170, DM[18]:   110
+# time:               12882	,pc: 15	,ACC:160,	B:180,	C:  2,	D:  0,	E:  0,	H: 13,	L:  0, cy: 1, z: 1, DM[11]:   170, DM[18]:   110
+# time:               12922	,pc: 16	,ACC:160,	B:180,	C:  1,	D:  0,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               12962	,pc:  2	,ACC:160,	B:180,	C:  1,	D:  0,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               13002	,pc:  3	,ACC:160,	B:180,	C:  1,	D:  1,	E:  0,	H: 13,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               13042	,pc:  4	,ACC:160,	B:180,	C:  1,	D:  1,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               13082	,pc:  5	,ACC:170,	B:180,	C:  1,	D:  1,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               13122	,pc:  6	,ACC:170,	B:180,	C:  1,	D:  1,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               13162	,pc:  7	,ACC:170,	B:180,	C:  1,	D:  1,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               13202	,pc:  8	,ACC:170,	B:180,	C:  1,	D:  1,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               13242	,pc:  9	,ACC:170,	B:180,	C:  1,	D:  1,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               13282	,pc: 10	,ACC:170,	B:180,	C:  1,	D:  1,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               13322	,pc: 11	,ACC:170,	B:180,	C:  1,	D:  1,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   170, DM[18]:   110
+# time:               13362	,pc: 12	,ACC:170,	B:180,	C:  1,	D:  1,	E:  0,	H: 11,	L:  0, cy: 1, z: 0, DM[11]:   180, DM[18]:   110
+# time:               13402	,pc: 13	,ACC:170,	B:180,	C:  1,	D:  1,	E:  0,	H: 12,	L:  0, cy: 1, z: 0, DM[11]:   180, DM[18]:   110
+# time:               13442	,pc: 14	,ACC:170,	B:180,	C:  1,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               13482	,pc: 15	,ACC:170,	B:180,	C:  1,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               13522	,pc: 16	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               13562	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               13602	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               13642	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               13682	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               13722	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               13762	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               13802	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               13842	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               13882	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               13922	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               13962	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14002	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14042	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14082	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14122	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14162	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14202	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14242	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14282	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14322	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14362	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14402	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14442	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14482	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14522	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14562	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14602	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14642	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14682	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14722	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14762	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14802	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14842	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14882	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14922	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# time:               14962	,pc: 17	,ACC:170,	B:180,	C:  0,	D:  0,	E:  0,	H: 12,	L:  0, cy: 1, z: 1, DM[11]:   180, DM[18]:   110
+# ** Note: $stop    : /home/alex/verilog_codes/processor_8085_single/generic_testbench_single_8085.v(27)
+#    Time: 15 us  Iteration: 0  Instance: /generic_testbench_single_8085
+# Break in Module generic_testbench_single_8085 at /home/alex/verilog_codes/processor_8085_single/generic_testbench_single_8085.v line 27
+# 
+# stdin: <EOF>
+# End time: 15:06:04 on May 20,2021, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 1
