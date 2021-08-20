@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "cy",
+					"strict" : false
+				},
+				{
+					"name" : "z",
+					"strict" : false
+				},
+				{
+					"name" : "ACC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
