@@ -1,0 +1,13 @@
+Link for Project Codes, report and images: 
+https://drive.google.com/drive/folders/1oAR_hNOS_0Kr9wiqTpJIjWNwWL-sGuRW?usp=sharing
+
+Link for Code Walkthrough and usage: 
+https://drive.google.com/file/d/1IP985SiRRBzsUL_YH8k1AwJDxVvFakYs/view?usp=sharing
+
+Link for FPGA Demo: 
+https://drive.google.com/file/d/1cnXNf7UlMSAL7I0TXZEDH0lH0tF-iYXZ/view?usp=sharing
+
+Link for Report: 
+https://docs.google.com/document/d/12e04wg_2zMemVmEuBR94y63KEoe6LA-dnuNH5iY7hS8/edit?usp=sharing
+
+For clear image of datapath, open "All_datapaths.pptx" file
