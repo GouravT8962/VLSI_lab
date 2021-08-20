@@ -1,0 +1,1225 @@
+Timing Analyzer report for processor_8085_multi
+Thu May 20 15:10:47 2021
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. SDC File List
+  5. Clocks
+  6. Slow 1200mV 85C Model Fmax Summary
+  7. Timing Closure Recommendations
+  8. Slow 1200mV 85C Model Setup Summary
+  9. Slow 1200mV 85C Model Hold Summary
+ 10. Slow 1200mV 85C Model Recovery Summary
+ 11. Slow 1200mV 85C Model Removal Summary
+ 12. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 13. Slow 1200mV 85C Model Setup: 'clk'
+ 14. Slow 1200mV 85C Model Hold: 'clk'
+ 15. Slow 1200mV 85C Model Metastability Summary
+ 16. Slow 1200mV 0C Model Fmax Summary
+ 17. Slow 1200mV 0C Model Setup Summary
+ 18. Slow 1200mV 0C Model Hold Summary
+ 19. Slow 1200mV 0C Model Recovery Summary
+ 20. Slow 1200mV 0C Model Removal Summary
+ 21. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 22. Slow 1200mV 0C Model Setup: 'clk'
+ 23. Slow 1200mV 0C Model Hold: 'clk'
+ 24. Slow 1200mV 0C Model Metastability Summary
+ 25. Fast 1200mV 0C Model Setup Summary
+ 26. Fast 1200mV 0C Model Hold Summary
+ 27. Fast 1200mV 0C Model Recovery Summary
+ 28. Fast 1200mV 0C Model Removal Summary
+ 29. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 30. Fast 1200mV 0C Model Setup: 'clk'
+ 31. Fast 1200mV 0C Model Hold: 'clk'
+ 32. Fast 1200mV 0C Model Metastability Summary
+ 33. Multicorner Timing Analysis Summary
+ 34. Board Trace Model Assignments
+ 35. Input Transition Times
+ 36. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 37. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 38. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 39. Setup Transfers
+ 40. Hold Transfers
+ 41. Report TCCS
+ 42. Report RSKM
+ 43. Unconstrained Paths Summary
+ 44. Clock Status Summary
+ 45. Unconstrained Input Ports
+ 46. Unconstrained Output Ports
+ 47. Unconstrained Input Ports
+ 48. Unconstrained Output Ports
+ 49. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; processor_8085_multi                                ;
+; Device Family         ; Cyclone IV E                                        ;
+; Device Name           ; EP4CE22F17C6                                        ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Combined                                            ;
+; Rise/Fall Delays      ; Enabled                                             ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.54        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;  21.1%      ;
+;     Processor 3            ;   9.8%      ;
+;     Processor 4            ;   8.1%      ;
+;     Processors 5-6         ;   7.3%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------+
+; SDC File List                                                    ;
++------------------------------+--------+--------------------------+
+; SDC File Path                ; Status ; Read at                  ;
++------------------------------+--------+--------------------------+
+; processor_8085_multi.out.sdc ; OK     ; Thu May 20 15:10:44 2021 ;
++------------------------------+--------+--------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                         ;
++------------+------+--------+-----------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+-----------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 10.000 ; 100.0 MHz ; 0.000 ; 5.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+--------+-----------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++--------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary               ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 103.49 MHz ; 103.49 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------+
+; Slow 1200mV 85C Model Setup Summary ;
++-------+-------+---------------------+
+; Clock ; Slack ; End Point TNS       ;
++-------+-------+---------------------+
+; clk   ; 0.337 ; 0.000               ;
++-------+-------+---------------------+
+
+
++------------------------------------+
+; Slow 1200mV 85C Model Hold Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; clk   ; 0.358 ; 0.000              ;
++-------+-------+--------------------+
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++-------+-------+-----------------------------------+
+; Clock ; Slack ; End Point TNS                     ;
++-------+-------+-----------------------------------+
+; clk   ; 4.674 ; 0.000                             ;
++-------+-------+-----------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'clk'                                                                                                    ;
++-------+---------------------------------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                             ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------+-----------------+--------------+-------------+--------------+------------+------------+
+; 0.337 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.066     ; 9.592      ;
+; 0.354 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.061     ; 9.580      ;
+; 0.444 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.488      ;
+; 0.449 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.483      ;
+; 0.466 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.066     ; 9.463      ;
+; 0.467 ; controller_8085_multi:contr|state.S15 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.061     ; 9.467      ;
+; 0.468 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.066     ; 9.461      ;
+; 0.482 ; controller_8085_multi:contr|state.S17 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.061     ; 9.452      ;
+; 0.518 ; controller_8085_multi:contr|state.S15 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.066     ; 9.411      ;
+; 0.533 ; controller_8085_multi:contr|state.S17 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.066     ; 9.396      ;
+; 0.535 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.397      ;
+; 0.543 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.389      ;
+; 0.567 ; pc[3]                                 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.066     ; 9.362      ;
+; 0.603 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[1] ; clk          ; clk         ; 10.000       ; -0.061     ; 9.331      ;
+; 0.625 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.307      ;
+; 0.630 ; controller_8085_multi:contr|state.S15 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.302      ;
+; 0.640 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.292      ;
+; 0.643 ; controller_8085_multi:contr|state.S22 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.061     ; 9.291      ;
+; 0.645 ; controller_8085_multi:contr|state.S17 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.287      ;
+; 0.647 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.066     ; 9.282      ;
+; 0.649 ; controller_8085_multi:contr|state.S15 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.066     ; 9.280      ;
+; 0.662 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.066     ; 9.267      ;
+; 0.664 ; controller_8085_multi:contr|state.S17 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.066     ; 9.265      ;
+; 0.674 ; pc[3]                                 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.258      ;
+; 0.677 ; controller_8085_multi:contr|state.S53 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.066     ; 9.252      ;
+; 0.679 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[7]    ; clk          ; clk         ; 10.000       ; -0.063     ; 9.253      ;
+; 0.679 ; pc[3]                                 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.253      ;
+; 0.683 ; controller_8085_multi:contr|state.S10 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.066     ; 9.246      ;
+; 0.689 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[6]  ; clk          ; clk         ; 10.000       ; -0.062     ; 9.244      ;
+; 0.689 ; controller_8085_multi:contr|state.S54 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.061     ; 9.245      ;
+; 0.694 ; controller_8085_multi:contr|state.S53 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.061     ; 9.240      ;
+; 0.694 ; controller_8085_multi:contr|state.S22 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.066     ; 9.235      ;
+; 0.696 ; pc[3]                                 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.066     ; 9.233      ;
+; 0.698 ; pc[3]                                 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.066     ; 9.231      ;
+; 0.699 ; controller_8085_multi:contr|state.S54 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.066     ; 9.230      ;
+; 0.700 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[0]  ; clk          ; clk         ; 10.000       ; -0.062     ; 9.233      ;
+; 0.700 ; controller_8085_multi:contr|state.S10 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.061     ; 9.234      ;
+; 0.710 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[2]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.222      ;
+; 0.716 ; controller_8085_multi:contr|state.S15 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.216      ;
+; 0.731 ; controller_8085_multi:contr|state.S17 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.201      ;
+; 0.750 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[1]    ; clk          ; clk         ; 10.000       ; -0.062     ; 9.183      ;
+; 0.753 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[1]  ; clk          ; clk         ; 10.000       ; -0.062     ; 9.180      ;
+; 0.765 ; pc[3]                                 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.167      ;
+; 0.784 ; controller_8085_multi:contr|state.S53 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.148      ;
+; 0.789 ; controller_8085_multi:contr|state.S53 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.143      ;
+; 0.790 ; controller_8085_multi:contr|state.S10 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.142      ;
+; 0.793 ; controller_8085_multi:contr|state.S10 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.139      ;
+; 0.795 ; controller_8085_multi:contr|state.S10 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.137      ;
+; 0.795 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.137      ;
+; 0.800 ; temp:T1|out[3]                        ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.064     ; 9.131      ;
+; 0.801 ; controller_8085_multi:contr|state.S22 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.131      ;
+; 0.802 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[6]  ; clk          ; clk         ; 10.000       ; -0.062     ; 9.131      ;
+; 0.806 ; controller_8085_multi:contr|state.S53 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.066     ; 9.123      ;
+; 0.806 ; controller_8085_multi:contr|state.S54 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.126      ;
+; 0.806 ; controller_8085_multi:contr|state.S22 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.126      ;
+; 0.808 ; controller_8085_multi:contr|state.S53 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.066     ; 9.121      ;
+; 0.810 ; ir:IR|out[0]                          ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.062     ; 9.123      ;
+; 0.810 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.122      ;
+; 0.811 ; controller_8085_multi:contr|state.S54 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.121      ;
+; 0.812 ; controller_8085_multi:contr|state.S10 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.066     ; 9.117      ;
+; 0.814 ; controller_8085_multi:contr|state.S10 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.066     ; 9.115      ;
+; 0.815 ; controller_8085_multi:contr|state.S54 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.117      ;
+; 0.817 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[6]  ; clk          ; clk         ; 10.000       ; -0.062     ; 9.116      ;
+; 0.823 ; controller_8085_multi:contr|state.S22 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.066     ; 9.106      ;
+; 0.825 ; controller_8085_multi:contr|state.S22 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.066     ; 9.104      ;
+; 0.828 ; controller_8085_multi:contr|state.S54 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.066     ; 9.101      ;
+; 0.830 ; controller_8085_multi:contr|state.S54 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.066     ; 9.099      ;
+; 0.832 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[2]    ; clk          ; clk         ; 10.000       ; -0.063     ; 9.100      ;
+; 0.834 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[2] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.098      ;
+; 0.846 ; pc[5]                                 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.059     ; 9.090      ;
+; 0.853 ; controller_8085_multi:contr|state.S10 ; temp:Acc|out[1] ; clk          ; clk         ; 10.000       ; -0.061     ; 9.081      ;
+; 0.860 ; controller_8085_multi:contr|state.S15 ; ir:IR|out[7]    ; clk          ; clk         ; 10.000       ; -0.063     ; 9.072      ;
+; 0.875 ; controller_8085_multi:contr|state.S53 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.057      ;
+; 0.875 ; controller_8085_multi:contr|state.S54 ; temp:Acc|out[1] ; clk          ; clk         ; 10.000       ; -0.061     ; 9.059      ;
+; 0.875 ; controller_8085_multi:contr|state.S10 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.057      ;
+; 0.875 ; controller_8085_multi:contr|state.S17 ; ir:IR|out[7]    ; clk          ; clk         ; 10.000       ; -0.063     ; 9.057      ;
+; 0.880 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[0]  ; clk          ; clk         ; 10.000       ; -0.062     ; 9.053      ;
+; 0.882 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[9]    ; clk          ; clk         ; 10.000       ; -0.063     ; 9.050      ;
+; 0.892 ; controller_8085_multi:contr|state.S22 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.040      ;
+; 0.895 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[0]  ; clk          ; clk         ; 10.000       ; -0.062     ; 9.038      ;
+; 0.897 ; controller_8085_multi:contr|state.S54 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.063     ; 9.035      ;
+; 0.901 ; controller_8085_multi:contr|state.S17 ; temp:Acc|out[1] ; clk          ; clk         ; 10.000       ; -0.061     ; 9.033      ;
+; 0.901 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[2]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.031      ;
+; 0.907 ; temp:T1|out[3]                        ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.061     ; 9.027      ;
+; 0.909 ; pc[3]                                 ; ir:IR|out[7]    ; clk          ; clk         ; 10.000       ; -0.063     ; 9.023      ;
+; 0.912 ; temp:T1|out[3]                        ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.061     ; 9.022      ;
+; 0.916 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[2]  ; clk          ; clk         ; 10.000       ; -0.063     ; 9.016      ;
+; 0.929 ; temp:T1|out[3]                        ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.064     ; 9.002      ;
+; 0.931 ; temp:T1|out[3]                        ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.064     ; 9.000      ;
+; 0.938 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[3]    ; clk          ; clk         ; 10.000       ; -0.064     ; 8.993      ;
+; 0.941 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[3]  ; clk          ; clk         ; 10.000       ; -0.064     ; 8.990      ;
+; 0.953 ; controller_8085_multi:contr|state.S10 ; temp:T1|out[0]  ; clk          ; clk         ; 10.000       ; -0.062     ; 8.980      ;
+; 0.955 ; controller_8085_multi:contr|state.S53 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.063     ; 8.977      ;
+; 0.967 ; controller_8085_multi:contr|state.S15 ; temp:Acc|out[1] ; clk          ; clk         ; 10.000       ; -0.061     ; 8.967      ;
+; 0.968 ; pc[6]                                 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.064     ; 8.963      ;
+; 0.969 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[4] ; clk          ; clk         ; 10.000       ; -0.067     ; 8.959      ;
+; 0.971 ; controller_8085_multi:contr|state.S22 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.063     ; 8.961      ;
+; 0.972 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[4]    ; clk          ; clk         ; 10.000       ; -0.067     ; 8.956      ;
+; 0.975 ; controller_8085_multi:contr|state.S54 ; temp:T1|out[0]  ; clk          ; clk         ; 10.000       ; -0.062     ; 8.958      ;
+; 0.978 ; ir:IR|out[4]                          ; flag:z2|out     ; clk          ; clk         ; 10.000       ; -0.058     ; 8.959      ;
++-------+---------------------------------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'clk'                                                                                                                                 ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.358 ; flag:z2|out                              ; flag:z2|out                              ; clk          ; clk         ; 0.000        ; 0.062      ; 0.577      ;
+; 0.359 ; controller_8085_multi:contr|state.HALT   ; controller_8085_multi:contr|state.HALT   ; clk          ; clk         ; 0.000        ; 0.061      ; 0.577      ;
+; 0.406 ; controller_8085_multi:contr|state.S6     ; controller_8085_multi:contr|state.S22    ; clk          ; clk         ; 0.000        ; 0.062      ; 0.625      ;
+; 0.500 ; ir:IR|out[4]                             ; temp:Acc|out[4]                          ; clk          ; clk         ; 0.000        ; 0.062      ; 0.719      ;
+; 0.515 ; controller_8085_multi:contr|state.S10    ; controller_8085_multi:contr|state.S6     ; clk          ; clk         ; 0.000        ; 0.062      ; 0.734      ;
+; 0.519 ; controller_8085_multi:contr|state.S1     ; controller_8085_multi:contr|state.S19    ; clk          ; clk         ; 0.000        ; 0.061      ; 0.737      ;
+; 0.572 ; controller_8085_multi:contr|state.S46    ; controller_8085_multi:contr|state.S22    ; clk          ; clk         ; 0.000        ; 0.062      ; 0.791      ;
+; 0.575 ; ir:IR|out[2]                             ; temp:Acc|out[2]                          ; clk          ; clk         ; 0.000        ; 0.062      ; 0.794      ;
+; 0.599 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.HALT   ; clk          ; clk         ; 0.000        ; 0.061      ; 0.817      ;
+; 0.601 ; controller_8085_multi:contr|state.S10    ; controller_8085_multi:contr|state.S7     ; clk          ; clk         ; 0.000        ; 0.062      ; 0.820      ;
+; 0.666 ; controller_8085_multi:contr|state.S25bar ; controller_8085_multi:contr|state.S24    ; clk          ; clk         ; 0.000        ; 0.062      ; 0.885      ;
+; 0.713 ; controller_8085_multi:contr|state.S32    ; flag:cy2|out                             ; clk          ; clk         ; 0.000        ; 0.061      ; 0.931      ;
+; 0.720 ; pc[2]                                    ; RF1:rf1_1|reg_file~58                    ; clk          ; clk         ; 0.000        ; 0.061      ; 0.938      ;
+; 0.777 ; ir:IR|out[0]                             ; temp:Acc|out[0]                          ; clk          ; clk         ; 0.000        ; 0.062      ; 0.996      ;
+; 0.801 ; controller_8085_multi:contr|state.S6     ; controller_8085_multi:contr|state.S7     ; clk          ; clk         ; 0.000        ; 0.062      ; 1.020      ;
+; 0.812 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S1     ; clk          ; clk         ; 0.000        ; 0.061      ; 1.030      ;
+; 0.927 ; temp:T1|out[2]                           ; MEM_8085_multi:mem1|mem_reg~1778         ; clk          ; clk         ; 0.000        ; 0.058      ; 1.142      ;
+; 0.948 ; temp:Acc|out[2]                          ; RF1:rf1_1|reg_file~58                    ; clk          ; clk         ; 0.000        ; 0.058      ; 1.163      ;
+; 0.950 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[2]                           ; clk          ; clk         ; 0.000        ; 0.061      ; 1.168      ;
+; 0.954 ; controller_8085_multi:contr|state.S1     ; controller_8085_multi:contr|state.S1     ; clk          ; clk         ; 0.000        ; 0.061      ; 1.172      ;
+; 0.969 ; ir:IR|out[7]                             ; temp:Acc|out[7]                          ; clk          ; clk         ; 0.000        ; 0.063      ; 1.189      ;
+; 0.987 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[4]                           ; clk          ; clk         ; 0.000        ; 0.061      ; 1.205      ;
+; 0.988 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[7]                           ; clk          ; clk         ; 0.000        ; 0.061      ; 1.206      ;
+; 0.990 ; controller_8085_multi:contr|state.HALT   ; controller_8085_multi:contr|state.S1     ; clk          ; clk         ; 0.000        ; 0.061      ; 1.208      ;
+; 0.999 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[5]                           ; clk          ; clk         ; 0.000        ; 0.058      ; 1.214      ;
+; 1.004 ; ir:IR|out[1]                             ; temp:Acc|out[1]                          ; clk          ; clk         ; 0.000        ; 0.063      ; 1.224      ;
+; 1.015 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S28    ; clk          ; clk         ; 0.000        ; 0.061      ; 1.233      ;
+; 1.018 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S13    ; clk          ; clk         ; 0.000        ; 0.061      ; 1.236      ;
+; 1.021 ; temp:Acc|out[5]                          ; RF1:rf1_1|reg_file~61                    ; clk          ; clk         ; 0.000        ; 0.059      ; 1.237      ;
+; 1.028 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S25bar ; clk          ; clk         ; 0.000        ; 0.096      ; 1.281      ;
+; 1.028 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S24    ; clk          ; clk         ; 0.000        ; 0.096      ; 1.281      ;
+; 1.045 ; RF1:rf1_1|reg_file~16                    ; pc[0]                                    ; clk          ; clk         ; 0.000        ; 0.066      ; 1.268      ;
+; 1.054 ; RF1:rf1_1|reg_file~42                    ; pc[2]                                    ; clk          ; clk         ; 0.000        ; 0.063      ; 1.274      ;
+; 1.066 ; RF1:rf1_1|reg_file~24                    ; pc[0]                                    ; clk          ; clk         ; 0.000        ; 0.066      ; 1.289      ;
+; 1.120 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S41    ; clk          ; clk         ; 0.000        ; 0.058      ; 1.335      ;
+; 1.132 ; controller_8085_multi:contr|state.S34    ; pc[5]                                    ; clk          ; clk         ; 0.000        ; 0.098      ; 1.387      ;
+; 1.144 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S3     ; clk          ; clk         ; 0.000        ; 0.057      ; 1.358      ;
+; 1.144 ; controller_8085_multi:contr|state.S10    ; controller_8085_multi:contr|state.S3     ; clk          ; clk         ; 0.000        ; 0.056      ; 1.357      ;
+; 1.148 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[2]                           ; clk          ; clk         ; 0.000        ; 0.061      ; 1.366      ;
+; 1.148 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[4]                           ; clk          ; clk         ; 0.000        ; 0.061      ; 1.366      ;
+; 1.148 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[7]                           ; clk          ; clk         ; 0.000        ; 0.061      ; 1.366      ;
+; 1.174 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S51    ; clk          ; clk         ; 0.000        ; 0.059      ; 1.390      ;
+; 1.174 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S55    ; clk          ; clk         ; 0.000        ; 0.059      ; 1.390      ;
+; 1.175 ; controller_8085_multi:contr|state.S34    ; pc[0]                                    ; clk          ; clk         ; 0.000        ; 0.065      ; 1.397      ;
+; 1.175 ; controller_8085_multi:contr|state.S34    ; pc[2]                                    ; clk          ; clk         ; 0.000        ; 0.065      ; 1.397      ;
+; 1.175 ; controller_8085_multi:contr|state.S34    ; pc[4]                                    ; clk          ; clk         ; 0.000        ; 0.065      ; 1.397      ;
+; 1.175 ; temp:T1|out[1]                           ; MEM_8085_multi:mem1|mem_reg~1777         ; clk          ; clk         ; 0.000        ; 0.057      ; 1.389      ;
+; 1.176 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S52    ; clk          ; clk         ; 0.000        ; 0.059      ; 1.392      ;
+; 1.192 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[5]                           ; clk          ; clk         ; 0.000        ; 0.058      ; 1.407      ;
+; 1.197 ; controller_8085_multi:contr|state.S41    ; controller_8085_multi:contr|state.S46    ; clk          ; clk         ; 0.000        ; 0.100      ; 1.454      ;
+; 1.204 ; controller_8085_multi:contr|state.S41    ; controller_8085_multi:contr|state.S10    ; clk          ; clk         ; 0.000        ; 0.100      ; 1.461      ;
+; 1.210 ; pc[4]                                    ; RF1:rf1_1|reg_file~60                    ; clk          ; clk         ; 0.000        ; 0.059      ; 1.426      ;
+; 1.212 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[3]                           ; clk          ; clk         ; 0.000        ; 0.060      ; 1.429      ;
+; 1.243 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[3]                           ; clk          ; clk         ; 0.000        ; 0.060      ; 1.460      ;
+; 1.254 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S53    ; clk          ; clk         ; 0.000        ; 0.095      ; 1.506      ;
+; 1.256 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[0]                           ; clk          ; clk         ; 0.000        ; 0.062      ; 1.475      ;
+; 1.268 ; RF1:rf1_1|reg_file~46                    ; pc[6]                                    ; clk          ; clk         ; 0.000        ; 0.101      ; 1.526      ;
+; 1.270 ; RF1:rf1_1|reg_file~40                    ; pc[0]                                    ; clk          ; clk         ; 0.000        ; 0.063      ; 1.490      ;
+; 1.272 ; RF1:rf1_1|reg_file~18                    ; pc[2]                                    ; clk          ; clk         ; 0.000        ; 0.066      ; 1.495      ;
+; 1.277 ; ir:IR|out[3]                             ; controller_8085_multi:contr|state.S30    ; clk          ; clk         ; 0.000        ; 0.055      ; 1.489      ;
+; 1.278 ; controller_8085_multi:contr|state.S53    ; temp:Acc|out[2]                          ; clk          ; clk         ; 0.000        ; 0.062      ; 1.497      ;
+; 1.297 ; temp:Acc|out[1]                          ; MEM_8085_multi:mem1|mem_reg~1777         ; clk          ; clk         ; 0.000        ; 0.056      ; 1.510      ;
+; 1.298 ; RF1:rf1_1|reg_file~41                    ; temp:T2|out[1]                           ; clk          ; clk         ; 0.000        ; 0.098      ; 1.553      ;
+; 1.320 ; ir:IR|out[14]                            ; controller_8085_multi:contr|state.S41    ; clk          ; clk         ; 0.000        ; 0.057      ; 1.534      ;
+; 1.343 ; RF1:rf1_1|reg_file~34                    ; pc[2]                                    ; clk          ; clk         ; 0.000        ; 0.063      ; 1.563      ;
+; 1.349 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[8]                             ; clk          ; clk         ; 0.000        ; 0.055      ; 1.561      ;
+; 1.350 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[13]                            ; clk          ; clk         ; 0.000        ; 0.063      ; 1.570      ;
+; 1.350 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[12]                            ; clk          ; clk         ; 0.000        ; 0.063      ; 1.570      ;
+; 1.350 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[11]                            ; clk          ; clk         ; 0.000        ; 0.063      ; 1.570      ;
+; 1.350 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[14]                            ; clk          ; clk         ; 0.000        ; 0.063      ; 1.570      ;
+; 1.350 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[15]                            ; clk          ; clk         ; 0.000        ; 0.063      ; 1.570      ;
+; 1.350 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S41    ; clk          ; clk         ; 0.000        ; 0.057      ; 1.564      ;
+; 1.360 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S39    ; clk          ; clk         ; 0.000        ; 0.095      ; 1.612      ;
+; 1.362 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S50    ; clk          ; clk         ; 0.000        ; 0.095      ; 1.614      ;
+; 1.364 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S15    ; clk          ; clk         ; 0.000        ; 0.096      ; 1.617      ;
+; 1.364 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S15    ; clk          ; clk         ; 0.000        ; 0.095      ; 1.616      ;
+; 1.367 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S52    ; clk          ; clk         ; 0.000        ; 0.059      ; 1.583      ;
+; 1.368 ; pc[5]                                    ; RF1:rf1_1|reg_file~61                    ; clk          ; clk         ; 0.000        ; 0.059      ; 1.584      ;
+; 1.370 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S55    ; clk          ; clk         ; 0.000        ; 0.059      ; 1.586      ;
+; 1.371 ; ir:IR|out[13]                            ; controller_8085_multi:contr|state.S41    ; clk          ; clk         ; 0.000        ; 0.057      ; 1.585      ;
+; 1.372 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S51    ; clk          ; clk         ; 0.000        ; 0.059      ; 1.588      ;
+; 1.376 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S32    ; clk          ; clk         ; 0.000        ; 0.055      ; 1.588      ;
+; 1.376 ; RF1:rf1_1|reg_file~47                    ; temp:T2|out[7]                           ; clk          ; clk         ; 0.000        ; 0.098      ; 1.631      ;
+; 1.378 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S30    ; clk          ; clk         ; 0.000        ; 0.055      ; 1.590      ;
+; 1.378 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S17    ; clk          ; clk         ; 0.000        ; 0.096      ; 1.631      ;
+; 1.379 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S34    ; clk          ; clk         ; 0.000        ; 0.055      ; 1.591      ;
+; 1.382 ; controller_8085_multi:contr|state.S6     ; flag:z2|out                              ; clk          ; clk         ; 0.000        ; 0.061      ; 1.600      ;
+; 1.394 ; controller_8085_multi:contr|state.S34    ; pc[3]                                    ; clk          ; clk         ; 0.000        ; 0.102      ; 1.653      ;
+; 1.394 ; controller_8085_multi:contr|state.S34    ; pc[7]                                    ; clk          ; clk         ; 0.000        ; 0.102      ; 1.653      ;
+; 1.405 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S10    ; clk          ; clk         ; 0.000        ; 0.095      ; 1.657      ;
+; 1.408 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S25bar ; clk          ; clk         ; 0.000        ; 0.095      ; 1.660      ;
+; 1.412 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S3     ; clk          ; clk         ; 0.000        ; 0.058      ; 1.627      ;
+; 1.414 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S22    ; clk          ; clk         ; 0.000        ; 0.095      ; 1.666      ;
+; 1.417 ; RF1:rf1_1|reg_file~43                    ; temp:T2|out[3]                           ; clk          ; clk         ; 0.000        ; 0.098      ; 1.672      ;
+; 1.418 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S46    ; clk          ; clk         ; 0.000        ; 0.095      ; 1.670      ;
+; 1.419 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S39    ; clk          ; clk         ; 0.000        ; 0.095      ; 1.671      ;
+; 1.419 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[0]                           ; clk          ; clk         ; 0.000        ; 0.062      ; 1.638      ;
+; 1.419 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[6]                           ; clk          ; clk         ; 0.000        ; 0.062      ; 1.638      ;
+; 1.422 ; RF1:rf1_1|reg_file~45                    ; temp:T2|out[5]                           ; clk          ; clk         ; 0.000        ; 0.098      ; 1.677      ;
+; 1.423 ; temp:Acc|out[1]                          ; RF1:rf1_1|reg_file~57                    ; clk          ; clk         ; 0.000        ; 0.054      ; 1.634      ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+-----------------------------------------------
+; Slow 1200mV 85C Model Metastability Summary ;
+-----------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 114.97 MHz ; 114.97 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Slow 1200mV 0C Model Setup Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; clk   ; 1.302 ; 0.000              ;
++-------+-------+--------------------+
+
+
++-----------------------------------+
+; Slow 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clk   ; 0.312 ; 0.000             ;
++-------+-------+-------------------+
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+-------+----------------------------------+
+; Clock ; Slack ; End Point TNS                    ;
++-------+-------+----------------------------------+
+; clk   ; 4.697 ; 0.000                            ;
++-------+-------+----------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'clk'                                                                                                     ;
++-------+---------------------------------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                             ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------+-----------------+--------------+-------------+--------------+------------+------------+
+; 1.302 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.058     ; 8.635      ;
+; 1.312 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.052     ; 8.631      ;
+; 1.371 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.056     ; 8.568      ;
+; 1.406 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.053     ; 8.536      ;
+; 1.419 ; controller_8085_multi:contr|state.S15 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.052     ; 8.524      ;
+; 1.434 ; controller_8085_multi:contr|state.S17 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.052     ; 8.509      ;
+; 1.435 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.059     ; 8.501      ;
+; 1.436 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.059     ; 8.500      ;
+; 1.451 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.053     ; 8.491      ;
+; 1.491 ; controller_8085_multi:contr|state.S15 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.058     ; 8.446      ;
+; 1.506 ; controller_8085_multi:contr|state.S17 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.058     ; 8.431      ;
+; 1.521 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.056     ; 8.418      ;
+; 1.532 ; pc[3]                                 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.060     ; 8.403      ;
+; 1.552 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.056     ; 8.387      ;
+; 1.564 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[1] ; clk          ; clk         ; 10.000       ; -0.052     ; 8.379      ;
+; 1.567 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.056     ; 8.372      ;
+; 1.576 ; controller_8085_multi:contr|state.S22 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.052     ; 8.367      ;
+; 1.587 ; controller_8085_multi:contr|state.S15 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.053     ; 8.355      ;
+; 1.593 ; pc[3]                                 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.058     ; 8.344      ;
+; 1.602 ; controller_8085_multi:contr|state.S54 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.052     ; 8.341      ;
+; 1.602 ; controller_8085_multi:contr|state.S17 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.053     ; 8.340      ;
+; 1.613 ; controller_8085_multi:contr|state.S10 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.058     ; 8.324      ;
+; 1.613 ; controller_8085_multi:contr|state.S53 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.058     ; 8.324      ;
+; 1.615 ; controller_8085_multi:contr|state.S54 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.058     ; 8.322      ;
+; 1.620 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[0]  ; clk          ; clk         ; 10.000       ; -0.052     ; 8.323      ;
+; 1.623 ; controller_8085_multi:contr|state.S10 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.052     ; 8.320      ;
+; 1.623 ; controller_8085_multi:contr|state.S53 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.052     ; 8.320      ;
+; 1.624 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.059     ; 8.312      ;
+; 1.625 ; controller_8085_multi:contr|state.S15 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.059     ; 8.311      ;
+; 1.628 ; pc[3]                                 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.055     ; 8.312      ;
+; 1.634 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[7]    ; clk          ; clk         ; 10.000       ; -0.053     ; 8.308      ;
+; 1.637 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[6]  ; clk          ; clk         ; 10.000       ; -0.052     ; 8.306      ;
+; 1.639 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.059     ; 8.297      ;
+; 1.640 ; controller_8085_multi:contr|state.S15 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.053     ; 8.302      ;
+; 1.640 ; controller_8085_multi:contr|state.S17 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.059     ; 8.296      ;
+; 1.648 ; controller_8085_multi:contr|state.S22 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.058     ; 8.289      ;
+; 1.653 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[2]  ; clk          ; clk         ; 10.000       ; -0.056     ; 8.286      ;
+; 1.655 ; controller_8085_multi:contr|state.S17 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.053     ; 8.287      ;
+; 1.665 ; pc[3]                                 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.061     ; 8.269      ;
+; 1.666 ; pc[3]                                 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.061     ; 8.268      ;
+; 1.681 ; pc[3]                                 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.055     ; 8.259      ;
+; 1.682 ; controller_8085_multi:contr|state.S10 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.056     ; 8.257      ;
+; 1.682 ; controller_8085_multi:contr|state.S53 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.056     ; 8.257      ;
+; 1.684 ; controller_8085_multi:contr|state.S54 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.056     ; 8.255      ;
+; 1.709 ; controller_8085_multi:contr|state.S22 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.056     ; 8.230      ;
+; 1.715 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[1]    ; clk          ; clk         ; 10.000       ; -0.052     ; 8.228      ;
+; 1.716 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[1]  ; clk          ; clk         ; 10.000       ; -0.052     ; 8.227      ;
+; 1.717 ; controller_8085_multi:contr|state.S10 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.053     ; 8.225      ;
+; 1.717 ; controller_8085_multi:contr|state.S53 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.053     ; 8.225      ;
+; 1.719 ; controller_8085_multi:contr|state.S54 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.053     ; 8.223      ;
+; 1.740 ; controller_8085_multi:contr|state.S10 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.056     ; 8.199      ;
+; 1.741 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[9]    ; clk          ; clk         ; 10.000       ; -0.053     ; 8.201      ;
+; 1.744 ; controller_8085_multi:contr|state.S22 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.053     ; 8.198      ;
+; 1.744 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[6]  ; clk          ; clk         ; 10.000       ; -0.052     ; 8.199      ;
+; 1.746 ; controller_8085_multi:contr|state.S10 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.059     ; 8.190      ;
+; 1.746 ; controller_8085_multi:contr|state.S53 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.059     ; 8.190      ;
+; 1.747 ; controller_8085_multi:contr|state.S10 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.059     ; 8.189      ;
+; 1.747 ; controller_8085_multi:contr|state.S53 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.059     ; 8.189      ;
+; 1.748 ; controller_8085_multi:contr|state.S54 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.059     ; 8.188      ;
+; 1.749 ; controller_8085_multi:contr|state.S54 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.059     ; 8.187      ;
+; 1.750 ; temp:T1|out[3]                        ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.056     ; 8.189      ;
+; 1.757 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[2]    ; clk          ; clk         ; 10.000       ; -0.056     ; 8.182      ;
+; 1.759 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[2] ; clk          ; clk         ; 10.000       ; -0.056     ; 8.180      ;
+; 1.759 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[6]  ; clk          ; clk         ; 10.000       ; -0.052     ; 8.184      ;
+; 1.762 ; controller_8085_multi:contr|state.S10 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.053     ; 8.180      ;
+; 1.762 ; controller_8085_multi:contr|state.S53 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.053     ; 8.180      ;
+; 1.763 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.056     ; 8.176      ;
+; 1.764 ; controller_8085_multi:contr|state.S54 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.053     ; 8.178      ;
+; 1.777 ; controller_8085_multi:contr|state.S10 ; temp:Acc|out[1] ; clk          ; clk         ; 10.000       ; -0.052     ; 8.166      ;
+; 1.778 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.056     ; 8.161      ;
+; 1.781 ; controller_8085_multi:contr|state.S22 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.059     ; 8.155      ;
+; 1.782 ; controller_8085_multi:contr|state.S54 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.056     ; 8.157      ;
+; 1.782 ; controller_8085_multi:contr|state.S22 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.059     ; 8.154      ;
+; 1.786 ; ir:IR|out[0]                          ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.056     ; 8.153      ;
+; 1.797 ; controller_8085_multi:contr|state.S22 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.053     ; 8.145      ;
+; 1.801 ; pc[5]                                 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.050     ; 8.144      ;
+; 1.811 ; temp:T1|out[3]                        ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.054     ; 8.130      ;
+; 1.813 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[0]  ; clk          ; clk         ; 10.000       ; -0.052     ; 8.130      ;
+; 1.815 ; controller_8085_multi:contr|state.S15 ; ir:IR|out[7]    ; clk          ; clk         ; 10.000       ; -0.053     ; 8.127      ;
+; 1.819 ; controller_8085_multi:contr|state.S54 ; temp:Acc|out[1] ; clk          ; clk         ; 10.000       ; -0.052     ; 8.124      ;
+; 1.821 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[3]    ; clk          ; clk         ; 10.000       ; -0.057     ; 8.117      ;
+; 1.824 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[3]  ; clk          ; clk         ; 10.000       ; -0.057     ; 8.114      ;
+; 1.825 ; controller_8085_multi:contr|state.S17 ; temp:Acc|out[1] ; clk          ; clk         ; 10.000       ; -0.052     ; 8.118      ;
+; 1.826 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[2]  ; clk          ; clk         ; 10.000       ; -0.056     ; 8.113      ;
+; 1.828 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[0]  ; clk          ; clk         ; 10.000       ; -0.052     ; 8.115      ;
+; 1.830 ; controller_8085_multi:contr|state.S17 ; ir:IR|out[7]    ; clk          ; clk         ; 10.000       ; -0.053     ; 8.112      ;
+; 1.837 ; controller_8085_multi:contr|state.S10 ; temp:T1|out[0]  ; clk          ; clk         ; 10.000       ; -0.052     ; 8.106      ;
+; 1.841 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[2]  ; clk          ; clk         ; 10.000       ; -0.056     ; 8.098      ;
+; 1.846 ; temp:T1|out[3]                        ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.051     ; 8.098      ;
+; 1.856 ; pc[3]                                 ; ir:IR|out[7]    ; clk          ; clk         ; 10.000       ; -0.055     ; 8.084      ;
+; 1.870 ; ir:IR|out[2]                          ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.055     ; 8.070      ;
+; 1.879 ; controller_8085_multi:contr|state.S54 ; temp:T1|out[0]  ; clk          ; clk         ; 10.000       ; -0.052     ; 8.064      ;
+; 1.883 ; temp:T1|out[3]                        ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.057     ; 8.055      ;
+; 1.884 ; temp:T1|out[3]                        ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.057     ; 8.054      ;
+; 1.885 ; controller_8085_multi:contr|state.S15 ; temp:Acc|out[1] ; clk          ; clk         ; 10.000       ; -0.052     ; 8.058      ;
+; 1.899 ; temp:T1|out[3]                        ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.051     ; 8.045      ;
+; 1.901 ; controller_8085_multi:contr|state.S22 ; temp:T1|out[6]  ; clk          ; clk         ; 10.000       ; -0.052     ; 8.042      ;
+; 1.904 ; ir:IR|out[4]                          ; flag:z2|out     ; clk          ; clk         ; 10.000       ; -0.051     ; 8.040      ;
+; 1.905 ; ir:IR|out[2]                          ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.052     ; 8.038      ;
+; 1.907 ; pc[6]                                 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.060     ; 8.028      ;
++-------+---------------------------------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'clk'                                                                                                                                  ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.312 ; flag:z2|out                              ; flag:z2|out                              ; clk          ; clk         ; 0.000        ; 0.055      ; 0.511      ;
+; 0.313 ; controller_8085_multi:contr|state.HALT   ; controller_8085_multi:contr|state.HALT   ; clk          ; clk         ; 0.000        ; 0.054      ; 0.511      ;
+; 0.369 ; controller_8085_multi:contr|state.S6     ; controller_8085_multi:contr|state.S22    ; clk          ; clk         ; 0.000        ; 0.055      ; 0.568      ;
+; 0.451 ; ir:IR|out[4]                             ; temp:Acc|out[4]                          ; clk          ; clk         ; 0.000        ; 0.055      ; 0.650      ;
+; 0.461 ; controller_8085_multi:contr|state.S1     ; controller_8085_multi:contr|state.S19    ; clk          ; clk         ; 0.000        ; 0.054      ; 0.659      ;
+; 0.463 ; controller_8085_multi:contr|state.S10    ; controller_8085_multi:contr|state.S6     ; clk          ; clk         ; 0.000        ; 0.055      ; 0.662      ;
+; 0.514 ; controller_8085_multi:contr|state.S46    ; controller_8085_multi:contr|state.S22    ; clk          ; clk         ; 0.000        ; 0.055      ; 0.713      ;
+; 0.517 ; ir:IR|out[2]                             ; temp:Acc|out[2]                          ; clk          ; clk         ; 0.000        ; 0.055      ; 0.716      ;
+; 0.536 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.HALT   ; clk          ; clk         ; 0.000        ; 0.054      ; 0.734      ;
+; 0.540 ; controller_8085_multi:contr|state.S10    ; controller_8085_multi:contr|state.S7     ; clk          ; clk         ; 0.000        ; 0.055      ; 0.739      ;
+; 0.609 ; controller_8085_multi:contr|state.S25bar ; controller_8085_multi:contr|state.S24    ; clk          ; clk         ; 0.000        ; 0.055      ; 0.808      ;
+; 0.651 ; controller_8085_multi:contr|state.S32    ; flag:cy2|out                             ; clk          ; clk         ; 0.000        ; 0.054      ; 0.849      ;
+; 0.660 ; pc[2]                                    ; RF1:rf1_1|reg_file~58                    ; clk          ; clk         ; 0.000        ; 0.055      ; 0.859      ;
+; 0.708 ; ir:IR|out[0]                             ; temp:Acc|out[0]                          ; clk          ; clk         ; 0.000        ; 0.055      ; 0.907      ;
+; 0.726 ; controller_8085_multi:contr|state.S6     ; controller_8085_multi:contr|state.S7     ; clk          ; clk         ; 0.000        ; 0.055      ; 0.925      ;
+; 0.727 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S1     ; clk          ; clk         ; 0.000        ; 0.054      ; 0.925      ;
+; 0.855 ; temp:T1|out[2]                           ; MEM_8085_multi:mem1|mem_reg~1778         ; clk          ; clk         ; 0.000        ; 0.052      ; 1.051      ;
+; 0.871 ; controller_8085_multi:contr|state.S1     ; controller_8085_multi:contr|state.S1     ; clk          ; clk         ; 0.000        ; 0.054      ; 1.069      ;
+; 0.872 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[2]                           ; clk          ; clk         ; 0.000        ; 0.054      ; 1.070      ;
+; 0.883 ; temp:Acc|out[2]                          ; RF1:rf1_1|reg_file~58                    ; clk          ; clk         ; 0.000        ; 0.053      ; 1.080      ;
+; 0.885 ; ir:IR|out[7]                             ; temp:Acc|out[7]                          ; clk          ; clk         ; 0.000        ; 0.055      ; 1.084      ;
+; 0.893 ; controller_8085_multi:contr|state.HALT   ; controller_8085_multi:contr|state.S1     ; clk          ; clk         ; 0.000        ; 0.054      ; 1.091      ;
+; 0.903 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[4]                           ; clk          ; clk         ; 0.000        ; 0.054      ; 1.101      ;
+; 0.904 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[7]                           ; clk          ; clk         ; 0.000        ; 0.054      ; 1.102      ;
+; 0.912 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S28    ; clk          ; clk         ; 0.000        ; 0.054      ; 1.110      ;
+; 0.915 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S13    ; clk          ; clk         ; 0.000        ; 0.054      ; 1.113      ;
+; 0.916 ; ir:IR|out[1]                             ; temp:Acc|out[1]                          ; clk          ; clk         ; 0.000        ; 0.056      ; 1.116      ;
+; 0.919 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[5]                           ; clk          ; clk         ; 0.000        ; 0.051      ; 1.114      ;
+; 0.927 ; RF1:rf1_1|reg_file~42                    ; pc[2]                                    ; clk          ; clk         ; 0.000        ; 0.057      ; 1.128      ;
+; 0.935 ; RF1:rf1_1|reg_file~16                    ; pc[0]                                    ; clk          ; clk         ; 0.000        ; 0.059      ; 1.138      ;
+; 0.943 ; temp:Acc|out[5]                          ; RF1:rf1_1|reg_file~61                    ; clk          ; clk         ; 0.000        ; 0.052      ; 1.139      ;
+; 0.947 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S25bar ; clk          ; clk         ; 0.000        ; 0.084      ; 1.175      ;
+; 0.947 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S24    ; clk          ; clk         ; 0.000        ; 0.084      ; 1.175      ;
+; 0.976 ; RF1:rf1_1|reg_file~24                    ; pc[0]                                    ; clk          ; clk         ; 0.000        ; 0.059      ; 1.179      ;
+; 1.026 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S3     ; clk          ; clk         ; 0.000        ; 0.049      ; 1.219      ;
+; 1.028 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S41    ; clk          ; clk         ; 0.000        ; 0.051      ; 1.223      ;
+; 1.032 ; controller_8085_multi:contr|state.S34    ; pc[5]                                    ; clk          ; clk         ; 0.000        ; 0.086      ; 1.262      ;
+; 1.052 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[2]                           ; clk          ; clk         ; 0.000        ; 0.054      ; 1.250      ;
+; 1.052 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[4]                           ; clk          ; clk         ; 0.000        ; 0.054      ; 1.250      ;
+; 1.052 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[7]                           ; clk          ; clk         ; 0.000        ; 0.054      ; 1.250      ;
+; 1.056 ; controller_8085_multi:contr|state.S10    ; controller_8085_multi:contr|state.S3     ; clk          ; clk         ; 0.000        ; 0.050      ; 1.250      ;
+; 1.066 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S55    ; clk          ; clk         ; 0.000        ; 0.051      ; 1.261      ;
+; 1.067 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S51    ; clk          ; clk         ; 0.000        ; 0.051      ; 1.262      ;
+; 1.073 ; temp:T1|out[1]                           ; MEM_8085_multi:mem1|mem_reg~1777         ; clk          ; clk         ; 0.000        ; 0.048      ; 1.265      ;
+; 1.074 ; controller_8085_multi:contr|state.S34    ; pc[0]                                    ; clk          ; clk         ; 0.000        ; 0.058      ; 1.276      ;
+; 1.074 ; controller_8085_multi:contr|state.S34    ; pc[2]                                    ; clk          ; clk         ; 0.000        ; 0.058      ; 1.276      ;
+; 1.074 ; controller_8085_multi:contr|state.S34    ; pc[4]                                    ; clk          ; clk         ; 0.000        ; 0.058      ; 1.276      ;
+; 1.075 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S52    ; clk          ; clk         ; 0.000        ; 0.051      ; 1.270      ;
+; 1.086 ; controller_8085_multi:contr|state.S41    ; controller_8085_multi:contr|state.S46    ; clk          ; clk         ; 0.000        ; 0.087      ; 1.317      ;
+; 1.091 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[5]                           ; clk          ; clk         ; 0.000        ; 0.051      ; 1.286      ;
+; 1.094 ; controller_8085_multi:contr|state.S41    ; controller_8085_multi:contr|state.S10    ; clk          ; clk         ; 0.000        ; 0.087      ; 1.325      ;
+; 1.104 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[3]                           ; clk          ; clk         ; 0.000        ; 0.053      ; 1.301      ;
+; 1.109 ; pc[4]                                    ; RF1:rf1_1|reg_file~60                    ; clk          ; clk         ; 0.000        ; 0.052      ; 1.305      ;
+; 1.134 ; RF1:rf1_1|reg_file~18                    ; pc[2]                                    ; clk          ; clk         ; 0.000        ; 0.059      ; 1.337      ;
+; 1.138 ; RF1:rf1_1|reg_file~46                    ; pc[6]                                    ; clk          ; clk         ; 0.000        ; 0.092      ; 1.374      ;
+; 1.140 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[3]                           ; clk          ; clk         ; 0.000        ; 0.053      ; 1.337      ;
+; 1.142 ; RF1:rf1_1|reg_file~41                    ; temp:T2|out[1]                           ; clk          ; clk         ; 0.000        ; 0.086      ; 1.372      ;
+; 1.143 ; controller_8085_multi:contr|state.S53    ; temp:Acc|out[2]                          ; clk          ; clk         ; 0.000        ; 0.054      ; 1.341      ;
+; 1.148 ; RF1:rf1_1|reg_file~40                    ; pc[0]                                    ; clk          ; clk         ; 0.000        ; 0.057      ; 1.349      ;
+; 1.149 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S53    ; clk          ; clk         ; 0.000        ; 0.082      ; 1.375      ;
+; 1.151 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[0]                           ; clk          ; clk         ; 0.000        ; 0.058      ; 1.353      ;
+; 1.168 ; ir:IR|out[3]                             ; controller_8085_multi:contr|state.S30    ; clk          ; clk         ; 0.000        ; 0.050      ; 1.362      ;
+; 1.179 ; ir:IR|out[14]                            ; controller_8085_multi:contr|state.S41    ; clk          ; clk         ; 0.000        ; 0.049      ; 1.372      ;
+; 1.193 ; RF1:rf1_1|reg_file~34                    ; pc[2]                                    ; clk          ; clk         ; 0.000        ; 0.057      ; 1.394      ;
+; 1.204 ; temp:Acc|out[1]                          ; MEM_8085_multi:mem1|mem_reg~1777         ; clk          ; clk         ; 0.000        ; 0.048      ; 1.396      ;
+; 1.220 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S41    ; clk          ; clk         ; 0.000        ; 0.049      ; 1.413      ;
+; 1.225 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[8]                             ; clk          ; clk         ; 0.000        ; 0.049      ; 1.418      ;
+; 1.226 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[13]                            ; clk          ; clk         ; 0.000        ; 0.056      ; 1.426      ;
+; 1.226 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[12]                            ; clk          ; clk         ; 0.000        ; 0.056      ; 1.426      ;
+; 1.226 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[11]                            ; clk          ; clk         ; 0.000        ; 0.056      ; 1.426      ;
+; 1.226 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[14]                            ; clk          ; clk         ; 0.000        ; 0.056      ; 1.426      ;
+; 1.226 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[15]                            ; clk          ; clk         ; 0.000        ; 0.056      ; 1.426      ;
+; 1.239 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S52    ; clk          ; clk         ; 0.000        ; 0.051      ; 1.434      ;
+; 1.240 ; RF1:rf1_1|reg_file~47                    ; temp:T2|out[7]                           ; clk          ; clk         ; 0.000        ; 0.086      ; 1.470      ;
+; 1.240 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S55    ; clk          ; clk         ; 0.000        ; 0.051      ; 1.435      ;
+; 1.243 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S50    ; clk          ; clk         ; 0.000        ; 0.082      ; 1.469      ;
+; 1.243 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S51    ; clk          ; clk         ; 0.000        ; 0.051      ; 1.438      ;
+; 1.248 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S39    ; clk          ; clk         ; 0.000        ; 0.082      ; 1.474      ;
+; 1.250 ; ir:IR|out[13]                            ; controller_8085_multi:contr|state.S41    ; clk          ; clk         ; 0.000        ; 0.049      ; 1.443      ;
+; 1.252 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S15    ; clk          ; clk         ; 0.000        ; 0.082      ; 1.478      ;
+; 1.253 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S15    ; clk          ; clk         ; 0.000        ; 0.084      ; 1.481      ;
+; 1.254 ; pc[5]                                    ; RF1:rf1_1|reg_file~61                    ; clk          ; clk         ; 0.000        ; 0.052      ; 1.450      ;
+; 1.262 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S32    ; clk          ; clk         ; 0.000        ; 0.049      ; 1.455      ;
+; 1.262 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S17    ; clk          ; clk         ; 0.000        ; 0.084      ; 1.490      ;
+; 1.266 ; controller_8085_multi:contr|state.S6     ; flag:z2|out                              ; clk          ; clk         ; 0.000        ; 0.054      ; 1.464      ;
+; 1.267 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S34    ; clk          ; clk         ; 0.000        ; 0.049      ; 1.460      ;
+; 1.267 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S30    ; clk          ; clk         ; 0.000        ; 0.049      ; 1.460      ;
+; 1.267 ; RF1:rf1_1|reg_file~43                    ; temp:T2|out[3]                           ; clk          ; clk         ; 0.000        ; 0.086      ; 1.497      ;
+; 1.275 ; controller_8085_multi:contr|state.S34    ; pc[3]                                    ; clk          ; clk         ; 0.000        ; 0.091      ; 1.510      ;
+; 1.275 ; controller_8085_multi:contr|state.S34    ; pc[7]                                    ; clk          ; clk         ; 0.000        ; 0.091      ; 1.510      ;
+; 1.277 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S10    ; clk          ; clk         ; 0.000        ; 0.082      ; 1.503      ;
+; 1.279 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S25bar ; clk          ; clk         ; 0.000        ; 0.082      ; 1.505      ;
+; 1.282 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S22    ; clk          ; clk         ; 0.000        ; 0.082      ; 1.508      ;
+; 1.282 ; MEM_8085_multi:mem1|mem_reg~271          ; ir:IR|out[15]                            ; clk          ; clk         ; 0.000        ; 0.054      ; 1.480      ;
+; 1.292 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S46    ; clk          ; clk         ; 0.000        ; 0.082      ; 1.518      ;
+; 1.293 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S39    ; clk          ; clk         ; 0.000        ; 0.082      ; 1.519      ;
+; 1.294 ; RF1:rf1_1|reg_file~45                    ; temp:T2|out[5]                           ; clk          ; clk         ; 0.000        ; 0.086      ; 1.524      ;
+; 1.295 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S3     ; clk          ; clk         ; 0.000        ; 0.051      ; 1.490      ;
+; 1.296 ; temp:T1|out[3]                           ; MEM_8085_multi:mem1|mem_reg~4083         ; clk          ; clk         ; 0.000        ; 0.055      ; 1.495      ;
+; 1.297 ; temp:T1|out[3]                           ; MEM_8085_multi:mem1|mem_reg~2563         ; clk          ; clk         ; 0.000        ; 0.055      ; 1.496      ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+----------------------------------------------
+; Slow 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++------------------------------------+
+; Fast 1200mV 0C Model Setup Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; clk   ; 4.366 ; 0.000              ;
++-------+-------+--------------------+
+
+
++-----------------------------------+
+; Fast 1200mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clk   ; 0.187 ; 0.000             ;
++-------+-------+-------------------+
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+-------+----------------------------------+
+; Clock ; Slack ; End Point TNS                    ;
++-------+-------+----------------------------------+
+; clk   ; 4.440 ; 0.000                            ;
++-------+-------+----------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'clk'                                                                                                     ;
++-------+---------------------------------------+-----------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                             ; To Node         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------------------+-----------------+--------------+-------------+--------------+------------+------------+
+; 4.366 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.040     ; 5.581      ;
+; 4.383 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.034     ; 5.570      ;
+; 4.423 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.527      ;
+; 4.440 ; controller_8085_multi:contr|state.S15 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.034     ; 5.513      ;
+; 4.443 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.040     ; 5.504      ;
+; 4.445 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.040     ; 5.502      ;
+; 4.449 ; controller_8085_multi:contr|state.S17 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.034     ; 5.504      ;
+; 4.452 ; pc[3]                                 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.041     ; 5.494      ;
+; 4.453 ; controller_8085_multi:contr|state.S15 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.040     ; 5.494      ;
+; 4.455 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.035     ; 5.497      ;
+; 4.462 ; controller_8085_multi:contr|state.S17 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.040     ; 5.485      ;
+; 4.488 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.035     ; 5.464      ;
+; 4.503 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.447      ;
+; 4.509 ; pc[3]                                 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.038     ; 5.440      ;
+; 4.510 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.440      ;
+; 4.519 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.431      ;
+; 4.529 ; pc[3]                                 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.041     ; 5.417      ;
+; 4.530 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.040     ; 5.417      ;
+; 4.531 ; controller_8085_multi:contr|state.S22 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.034     ; 5.422      ;
+; 4.531 ; pc[3]                                 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.041     ; 5.415      ;
+; 4.532 ; controller_8085_multi:contr|state.S15 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.040     ; 5.415      ;
+; 4.539 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.040     ; 5.408      ;
+; 4.541 ; pc[3]                                 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.036     ; 5.410      ;
+; 4.541 ; controller_8085_multi:contr|state.S17 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.040     ; 5.406      ;
+; 4.542 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[1] ; clk          ; clk         ; 10.000       ; -0.034     ; 5.411      ;
+; 4.542 ; controller_8085_multi:contr|state.S15 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.035     ; 5.410      ;
+; 4.544 ; controller_8085_multi:contr|state.S22 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.040     ; 5.403      ;
+; 4.549 ; controller_8085_multi:contr|state.S53 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.040     ; 5.398      ;
+; 4.550 ; controller_8085_multi:contr|state.S10 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.040     ; 5.397      ;
+; 4.551 ; controller_8085_multi:contr|state.S17 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.035     ; 5.401      ;
+; 4.566 ; controller_8085_multi:contr|state.S53 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.034     ; 5.387      ;
+; 4.567 ; controller_8085_multi:contr|state.S10 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.034     ; 5.386      ;
+; 4.572 ; controller_8085_multi:contr|state.S54 ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.040     ; 5.375      ;
+; 4.574 ; pc[3]                                 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.036     ; 5.377      ;
+; 4.575 ; controller_8085_multi:contr|state.S15 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.035     ; 5.377      ;
+; 4.580 ; temp:T1|out[3]                        ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.038     ; 5.369      ;
+; 4.583 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[6]  ; clk          ; clk         ; 10.000       ; -0.035     ; 5.369      ;
+; 4.584 ; controller_8085_multi:contr|state.S17 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.035     ; 5.368      ;
+; 4.585 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[2]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.365      ;
+; 4.590 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[0]  ; clk          ; clk         ; 10.000       ; -0.035     ; 5.362      ;
+; 4.594 ; controller_8085_multi:contr|state.S54 ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.034     ; 5.359      ;
+; 4.601 ; controller_8085_multi:contr|state.S22 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.349      ;
+; 4.602 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[7]    ; clk          ; clk         ; 10.000       ; -0.035     ; 5.350      ;
+; 4.603 ; ir:IR|out[0]                          ; temp:Acc|out[6] ; clk          ; clk         ; 10.000       ; -0.038     ; 5.346      ;
+; 4.606 ; controller_8085_multi:contr|state.S53 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.344      ;
+; 4.607 ; controller_8085_multi:contr|state.S10 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.343      ;
+; 4.621 ; controller_8085_multi:contr|state.S22 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.040     ; 5.326      ;
+; 4.623 ; controller_8085_multi:contr|state.S22 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.040     ; 5.324      ;
+; 4.626 ; controller_8085_multi:contr|state.S53 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.040     ; 5.321      ;
+; 4.627 ; controller_8085_multi:contr|state.S10 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.040     ; 5.320      ;
+; 4.628 ; controller_8085_multi:contr|state.S53 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.040     ; 5.319      ;
+; 4.628 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.322      ;
+; 4.629 ; controller_8085_multi:contr|state.S10 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.040     ; 5.318      ;
+; 4.629 ; controller_8085_multi:contr|state.S54 ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.321      ;
+; 4.631 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[1]    ; clk          ; clk         ; 10.000       ; -0.034     ; 5.322      ;
+; 4.631 ; controller_8085_multi:contr|state.S50 ; temp:T1|out[1]  ; clk          ; clk         ; 10.000       ; -0.034     ; 5.322      ;
+; 4.633 ; controller_8085_multi:contr|state.S22 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.035     ; 5.319      ;
+; 4.637 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[9]    ; clk          ; clk         ; 10.000       ; -0.035     ; 5.315      ;
+; 4.637 ; temp:T1|out[3]                        ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.035     ; 5.315      ;
+; 4.637 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.313      ;
+; 4.638 ; controller_8085_multi:contr|state.S53 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.035     ; 5.314      ;
+; 4.639 ; controller_8085_multi:contr|state.S10 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.035     ; 5.313      ;
+; 4.640 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[6]  ; clk          ; clk         ; 10.000       ; -0.035     ; 5.312      ;
+; 4.649 ; controller_8085_multi:contr|state.S54 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.301      ;
+; 4.649 ; controller_8085_multi:contr|state.S54 ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.040     ; 5.298      ;
+; 4.649 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[6]  ; clk          ; clk         ; 10.000       ; -0.035     ; 5.303      ;
+; 4.651 ; controller_8085_multi:contr|state.S54 ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.040     ; 5.296      ;
+; 4.651 ; pc[5]                                 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.032     ; 5.304      ;
+; 4.656 ; controller_8085_multi:contr|state.S54 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.035     ; 5.296      ;
+; 4.657 ; temp:T1|out[3]                        ; temp:T1|out[5]  ; clk          ; clk         ; 10.000       ; -0.038     ; 5.292      ;
+; 4.659 ; controller_8085_multi:contr|state.S50 ; temp:Acc|out[2] ; clk          ; clk         ; 10.000       ; -0.037     ; 5.291      ;
+; 4.659 ; temp:T1|out[3]                        ; ir:IR|out[5]    ; clk          ; clk         ; 10.000       ; -0.038     ; 5.290      ;
+; 4.660 ; controller_8085_multi:contr|state.S50 ; ir:IR|out[2]    ; clk          ; clk         ; 10.000       ; -0.037     ; 5.290      ;
+; 4.661 ; controller_8085_multi:contr|state.S54 ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.035     ; 5.291      ;
+; 4.663 ; controller_8085_multi:contr|state.S10 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.287      ;
+; 4.666 ; controller_8085_multi:contr|state.S22 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.035     ; 5.286      ;
+; 4.669 ; temp:T1|out[3]                        ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.033     ; 5.285      ;
+; 4.670 ; controller_8085_multi:contr|state.S10 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.035     ; 5.282      ;
+; 4.671 ; controller_8085_multi:contr|state.S53 ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.035     ; 5.281      ;
+; 4.681 ; ir:IR|out[2]                          ; temp:T1|out[7]  ; clk          ; clk         ; 10.000       ; -0.036     ; 5.270      ;
+; 4.688 ; controller_8085_multi:contr|state.S54 ; temp:Acc|out[1] ; clk          ; clk         ; 10.000       ; -0.034     ; 5.265      ;
+; 4.688 ; pc[3]                                 ; ir:IR|out[7]    ; clk          ; clk         ; 10.000       ; -0.036     ; 5.263      ;
+; 4.689 ; controller_8085_multi:contr|state.S15 ; ir:IR|out[7]    ; clk          ; clk         ; 10.000       ; -0.035     ; 5.263      ;
+; 4.694 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[2]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.256      ;
+; 4.695 ; pc[6]                                 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.039     ; 5.253      ;
+; 4.698 ; controller_8085_multi:contr|state.S17 ; ir:IR|out[7]    ; clk          ; clk         ; 10.000       ; -0.035     ; 5.254      ;
+; 4.702 ; temp:T1|out[3]                        ; temp:Acc|out[3] ; clk          ; clk         ; 10.000       ; -0.033     ; 5.252      ;
+; 4.702 ; controller_8085_multi:contr|state.S10 ; temp:Acc|out[1] ; clk          ; clk         ; 10.000       ; -0.034     ; 5.251      ;
+; 4.703 ; controller_8085_multi:contr|state.S17 ; temp:T1|out[2]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.247      ;
+; 4.705 ; controller_8085_multi:contr|state.S17 ; temp:Acc|out[1] ; clk          ; clk         ; 10.000       ; -0.034     ; 5.248      ;
+; 4.713 ; ir:IR|out[2]                          ; temp:Acc|out[7] ; clk          ; clk         ; 10.000       ; -0.034     ; 5.240      ;
+; 4.717 ; ir:IR|out[0]                          ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.041     ; 5.229      ;
+; 4.718 ; controller_8085_multi:contr|state.S53 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.232      ;
+; 4.719 ; controller_8085_multi:contr|state.S22 ; temp:T1|out[4]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.231      ;
+; 4.723 ; ir:IR|out[2]                          ; temp:Acc|out[5] ; clk          ; clk         ; 10.000       ; -0.039     ; 5.225      ;
+; 4.723 ; pc[3]                                 ; ir:IR|out[9]    ; clk          ; clk         ; 10.000       ; -0.036     ; 5.228      ;
+; 4.724 ; controller_8085_multi:contr|state.S15 ; ir:IR|out[9]    ; clk          ; clk         ; 10.000       ; -0.035     ; 5.228      ;
+; 4.731 ; controller_8085_multi:contr|state.S54 ; temp:T1|out[2]  ; clk          ; clk         ; 10.000       ; -0.037     ; 5.219      ;
+; 4.731 ; controller_8085_multi:contr|state.S22 ; temp:T1|out[6]  ; clk          ; clk         ; 10.000       ; -0.035     ; 5.221      ;
+; 4.732 ; controller_8085_multi:contr|state.S15 ; temp:T1|out[0]  ; clk          ; clk         ; 10.000       ; -0.035     ; 5.220      ;
++-------+---------------------------------------+-----------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'clk'                                                                                                                                  ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.187 ; controller_8085_multi:contr|state.HALT   ; controller_8085_multi:contr|state.HALT   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; flag:z2|out                              ; flag:z2|out                              ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.211 ; controller_8085_multi:contr|state.S6     ; controller_8085_multi:contr|state.S22    ; clk          ; clk         ; 0.000        ; 0.037      ; 0.332      ;
+; 0.266 ; ir:IR|out[4]                             ; temp:Acc|out[4]                          ; clk          ; clk         ; 0.000        ; 0.036      ; 0.386      ;
+; 0.273 ; controller_8085_multi:contr|state.S10    ; controller_8085_multi:contr|state.S6     ; clk          ; clk         ; 0.000        ; 0.037      ; 0.394      ;
+; 0.279 ; controller_8085_multi:contr|state.S1     ; controller_8085_multi:contr|state.S19    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.399      ;
+; 0.305 ; controller_8085_multi:contr|state.S46    ; controller_8085_multi:contr|state.S22    ; clk          ; clk         ; 0.000        ; 0.037      ; 0.426      ;
+; 0.307 ; ir:IR|out[2]                             ; temp:Acc|out[2]                          ; clk          ; clk         ; 0.000        ; 0.036      ; 0.427      ;
+; 0.321 ; controller_8085_multi:contr|state.S10    ; controller_8085_multi:contr|state.S7     ; clk          ; clk         ; 0.000        ; 0.037      ; 0.442      ;
+; 0.322 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.HALT   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.442      ;
+; 0.346 ; controller_8085_multi:contr|state.S25bar ; controller_8085_multi:contr|state.S24    ; clk          ; clk         ; 0.000        ; 0.037      ; 0.467      ;
+; 0.376 ; controller_8085_multi:contr|state.S32    ; flag:cy2|out                             ; clk          ; clk         ; 0.000        ; 0.035      ; 0.495      ;
+; 0.380 ; pc[2]                                    ; RF1:rf1_1|reg_file~58                    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.500      ;
+; 0.408 ; ir:IR|out[0]                             ; temp:Acc|out[0]                          ; clk          ; clk         ; 0.000        ; 0.037      ; 0.529      ;
+; 0.422 ; controller_8085_multi:contr|state.S6     ; controller_8085_multi:contr|state.S7     ; clk          ; clk         ; 0.000        ; 0.037      ; 0.543      ;
+; 0.434 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S1     ; clk          ; clk         ; 0.000        ; 0.036      ; 0.554      ;
+; 0.500 ; temp:T1|out[2]                           ; MEM_8085_multi:mem1|mem_reg~1778         ; clk          ; clk         ; 0.000        ; 0.033      ; 0.617      ;
+; 0.504 ; controller_8085_multi:contr|state.S1     ; controller_8085_multi:contr|state.S1     ; clk          ; clk         ; 0.000        ; 0.036      ; 0.624      ;
+; 0.505 ; temp:Acc|out[2]                          ; RF1:rf1_1|reg_file~58                    ; clk          ; clk         ; 0.000        ; 0.035      ; 0.624      ;
+; 0.507 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[2]                           ; clk          ; clk         ; 0.000        ; 0.036      ; 0.627      ;
+; 0.507 ; ir:IR|out[7]                             ; temp:Acc|out[7]                          ; clk          ; clk         ; 0.000        ; 0.036      ; 0.627      ;
+; 0.526 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[4]                           ; clk          ; clk         ; 0.000        ; 0.036      ; 0.646      ;
+; 0.526 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[7]                           ; clk          ; clk         ; 0.000        ; 0.036      ; 0.646      ;
+; 0.530 ; controller_8085_multi:contr|state.HALT   ; controller_8085_multi:contr|state.S1     ; clk          ; clk         ; 0.000        ; 0.036      ; 0.650      ;
+; 0.530 ; ir:IR|out[1]                             ; temp:Acc|out[1]                          ; clk          ; clk         ; 0.000        ; 0.036      ; 0.650      ;
+; 0.544 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S28    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.664      ;
+; 0.545 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[5]                           ; clk          ; clk         ; 0.000        ; 0.034      ; 0.663      ;
+; 0.547 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S13    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.667      ;
+; 0.551 ; temp:Acc|out[5]                          ; RF1:rf1_1|reg_file~61                    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.671      ;
+; 0.552 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S25bar ; clk          ; clk         ; 0.000        ; 0.056      ; 0.692      ;
+; 0.555 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S24    ; clk          ; clk         ; 0.000        ; 0.056      ; 0.695      ;
+; 0.556 ; RF1:rf1_1|reg_file~42                    ; pc[2]                                    ; clk          ; clk         ; 0.000        ; 0.037      ; 0.677      ;
+; 0.557 ; RF1:rf1_1|reg_file~16                    ; pc[0]                                    ; clk          ; clk         ; 0.000        ; 0.040      ; 0.681      ;
+; 0.563 ; RF1:rf1_1|reg_file~24                    ; pc[0]                                    ; clk          ; clk         ; 0.000        ; 0.040      ; 0.687      ;
+; 0.598 ; controller_8085_multi:contr|state.S34    ; pc[5]                                    ; clk          ; clk         ; 0.000        ; 0.058      ; 0.740      ;
+; 0.609 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S41    ; clk          ; clk         ; 0.000        ; 0.032      ; 0.725      ;
+; 0.614 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[2]                           ; clk          ; clk         ; 0.000        ; 0.036      ; 0.734      ;
+; 0.614 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[4]                           ; clk          ; clk         ; 0.000        ; 0.036      ; 0.734      ;
+; 0.614 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[7]                           ; clk          ; clk         ; 0.000        ; 0.036      ; 0.734      ;
+; 0.617 ; controller_8085_multi:contr|state.S10    ; controller_8085_multi:contr|state.S3     ; clk          ; clk         ; 0.000        ; 0.033      ; 0.734      ;
+; 0.633 ; controller_8085_multi:contr|state.S34    ; pc[0]                                    ; clk          ; clk         ; 0.000        ; 0.039      ; 0.756      ;
+; 0.633 ; controller_8085_multi:contr|state.S34    ; pc[2]                                    ; clk          ; clk         ; 0.000        ; 0.039      ; 0.756      ;
+; 0.633 ; controller_8085_multi:contr|state.S34    ; pc[4]                                    ; clk          ; clk         ; 0.000        ; 0.039      ; 0.756      ;
+; 0.634 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S3     ; clk          ; clk         ; 0.000        ; 0.031      ; 0.749      ;
+; 0.643 ; controller_8085_multi:contr|state.S41    ; controller_8085_multi:contr|state.S46    ; clk          ; clk         ; 0.000        ; 0.059      ; 0.786      ;
+; 0.645 ; controller_8085_multi:contr|state.S41    ; controller_8085_multi:contr|state.S10    ; clk          ; clk         ; 0.000        ; 0.059      ; 0.788      ;
+; 0.648 ; temp:T1|out[1]                           ; MEM_8085_multi:mem1|mem_reg~1777         ; clk          ; clk         ; 0.000        ; 0.030      ; 0.762      ;
+; 0.653 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[5]                           ; clk          ; clk         ; 0.000        ; 0.034      ; 0.771      ;
+; 0.654 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[3]                           ; clk          ; clk         ; 0.000        ; 0.035      ; 0.773      ;
+; 0.655 ; pc[4]                                    ; RF1:rf1_1|reg_file~60                    ; clk          ; clk         ; 0.000        ; 0.034      ; 0.773      ;
+; 0.662 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[3]                           ; clk          ; clk         ; 0.000        ; 0.035      ; 0.781      ;
+; 0.667 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S51    ; clk          ; clk         ; 0.000        ; 0.033      ; 0.784      ;
+; 0.668 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S52    ; clk          ; clk         ; 0.000        ; 0.033      ; 0.785      ;
+; 0.669 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S55    ; clk          ; clk         ; 0.000        ; 0.033      ; 0.786      ;
+; 0.671 ; RF1:rf1_1|reg_file~40                    ; pc[0]                                    ; clk          ; clk         ; 0.000        ; 0.037      ; 0.792      ;
+; 0.678 ; RF1:rf1_1|reg_file~18                    ; pc[2]                                    ; clk          ; clk         ; 0.000        ; 0.040      ; 0.802      ;
+; 0.678 ; controller_8085_multi:contr|state.S10    ; temp:T1|out[0]                           ; clk          ; clk         ; 0.000        ; 0.039      ; 0.801      ;
+; 0.682 ; RF1:rf1_1|reg_file~41                    ; temp:T2|out[1]                           ; clk          ; clk         ; 0.000        ; 0.057      ; 0.823      ;
+; 0.687 ; RF1:rf1_1|reg_file~46                    ; pc[6]                                    ; clk          ; clk         ; 0.000        ; 0.061      ; 0.832      ;
+; 0.695 ; ir:IR|out[3]                             ; controller_8085_multi:contr|state.S30    ; clk          ; clk         ; 0.000        ; 0.032      ; 0.811      ;
+; 0.702 ; temp:Acc|out[1]                          ; MEM_8085_multi:mem1|mem_reg~1777         ; clk          ; clk         ; 0.000        ; 0.030      ; 0.816      ;
+; 0.707 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S53    ; clk          ; clk         ; 0.000        ; 0.055      ; 0.846      ;
+; 0.709 ; RF1:rf1_1|reg_file~34                    ; pc[2]                                    ; clk          ; clk         ; 0.000        ; 0.037      ; 0.830      ;
+; 0.713 ; controller_8085_multi:contr|state.S53    ; temp:Acc|out[2]                          ; clk          ; clk         ; 0.000        ; 0.036      ; 0.833      ;
+; 0.723 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[13]                            ; clk          ; clk         ; 0.000        ; 0.037      ; 0.844      ;
+; 0.723 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[12]                            ; clk          ; clk         ; 0.000        ; 0.037      ; 0.844      ;
+; 0.723 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[11]                            ; clk          ; clk         ; 0.000        ; 0.037      ; 0.844      ;
+; 0.723 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[14]                            ; clk          ; clk         ; 0.000        ; 0.037      ; 0.844      ;
+; 0.723 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[15]                            ; clk          ; clk         ; 0.000        ; 0.037      ; 0.844      ;
+; 0.731 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S39    ; clk          ; clk         ; 0.000        ; 0.055      ; 0.870      ;
+; 0.731 ; RF1:rf1_1|reg_file~47                    ; temp:T2|out[7]                           ; clk          ; clk         ; 0.000        ; 0.057      ; 0.872      ;
+; 0.731 ; pc[5]                                    ; RF1:rf1_1|reg_file~61                    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.851      ;
+; 0.733 ; ir:IR|out[14]                            ; controller_8085_multi:contr|state.S41    ; clk          ; clk         ; 0.000        ; 0.031      ; 0.848      ;
+; 0.734 ; controller_8085_multi:contr|state.S6     ; flag:z2|out                              ; clk          ; clk         ; 0.000        ; 0.036      ; 0.854      ;
+; 0.735 ; controller_8085_multi:contr|state.S1     ; ir:IR|out[8]                             ; clk          ; clk         ; 0.000        ; 0.030      ; 0.849      ;
+; 0.738 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S15    ; clk          ; clk         ; 0.000        ; 0.056      ; 0.878      ;
+; 0.738 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S41    ; clk          ; clk         ; 0.000        ; 0.031      ; 0.853      ;
+; 0.746 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S17    ; clk          ; clk         ; 0.000        ; 0.056      ; 0.886      ;
+; 0.748 ; RF1:rf1_1|reg_file~43                    ; temp:T2|out[3]                           ; clk          ; clk         ; 0.000        ; 0.057      ; 0.889      ;
+; 0.751 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S32    ; clk          ; clk         ; 0.000        ; 0.030      ; 0.865      ;
+; 0.752 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S34    ; clk          ; clk         ; 0.000        ; 0.030      ; 0.866      ;
+; 0.752 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S52    ; clk          ; clk         ; 0.000        ; 0.033      ; 0.869      ;
+; 0.752 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S55    ; clk          ; clk         ; 0.000        ; 0.033      ; 0.869      ;
+; 0.752 ; ir:IR|out[13]                            ; controller_8085_multi:contr|state.S41    ; clk          ; clk         ; 0.000        ; 0.031      ; 0.867      ;
+; 0.753 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S30    ; clk          ; clk         ; 0.000        ; 0.030      ; 0.867      ;
+; 0.754 ; ir:IR|out[12]                            ; controller_8085_multi:contr|state.S51    ; clk          ; clk         ; 0.000        ; 0.033      ; 0.871      ;
+; 0.754 ; temp:T1|out[3]                           ; MEM_8085_multi:mem1|mem_reg~4083         ; clk          ; clk         ; 0.000        ; 0.036      ; 0.874      ;
+; 0.755 ; RF1:rf1_1|reg_file~45                    ; temp:T2|out[5]                           ; clk          ; clk         ; 0.000        ; 0.057      ; 0.896      ;
+; 0.755 ; temp:T1|out[3]                           ; MEM_8085_multi:mem1|mem_reg~2563         ; clk          ; clk         ; 0.000        ; 0.036      ; 0.875      ;
+; 0.760 ; ir:IR|out[5]                             ; temp:Acc|out[5]                          ; clk          ; clk         ; 0.000        ; 0.037      ; 0.881      ;
+; 0.762 ; controller_8085_multi:contr|state.S19    ; controller_8085_multi:contr|state.S3     ; clk          ; clk         ; 0.000        ; 0.032      ; 0.878      ;
+; 0.763 ; controller_8085_multi:contr|state.S34    ; pc[3]                                    ; clk          ; clk         ; 0.000        ; 0.062      ; 0.909      ;
+; 0.763 ; controller_8085_multi:contr|state.S34    ; pc[7]                                    ; clk          ; clk         ; 0.000        ; 0.062      ; 0.909      ;
+; 0.763 ; pc[2]                                    ; RF1:rf1_1|reg_file~50                    ; clk          ; clk         ; 0.000        ; 0.034      ; 0.881      ;
+; 0.764 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S50    ; clk          ; clk         ; 0.000        ; 0.055      ; 0.903      ;
+; 0.764 ; ir:IR|out[11]                            ; controller_8085_multi:contr|state.S15    ; clk          ; clk         ; 0.000        ; 0.055      ; 0.903      ;
+; 0.767 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[0]                           ; clk          ; clk         ; 0.000        ; 0.039      ; 0.890      ;
+; 0.767 ; controller_8085_multi:contr|state.S6     ; temp:T1|out[6]                           ; clk          ; clk         ; 0.000        ; 0.039      ; 0.890      ;
+; 0.767 ; temp:T1|out[2]                           ; RF1:rf1_1|reg_file~58                    ; clk          ; clk         ; 0.000        ; 0.035      ; 0.886      ;
+; 0.775 ; RF1:rf1_1|reg_file~20                    ; pc[4]                                    ; clk          ; clk         ; 0.000        ; 0.040      ; 0.899      ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
+----------------------------------------------
+; Fast 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++-----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                         ;
++------------------+-------+-------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+-------+----------+---------+---------------------+
+; Worst-case Slack ; 0.337 ; 0.187 ; N/A      ; N/A     ; 4.440               ;
+;  clk             ; 0.337 ; 0.187 ; N/A      ; N/A     ; 4.440               ;
+; Design-wide TNS  ; 0.0   ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+;  clk             ; 0.000 ; 0.000 ; N/A      ; N/A     ; 0.000               ;
++------------------+-------+-------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; z             ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; cy            ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ACC[0]        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ACC[1]        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ACC[2]        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ACC[3]        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ACC[4]        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ACC[5]        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ACC[6]        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ACC[7]        ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; clk                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; reset                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; z             ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; cy            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.33 V              ; -0.00616 V          ; 0.191 V                              ; 0.099 V                              ; 2.83e-09 s                  ; 2.56e-09 s                  ; No                         ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.33 V             ; -0.00616 V         ; 0.191 V                             ; 0.099 V                             ; 2.83e-09 s                 ; 2.56e-09 s                 ; No                        ; Yes                       ;
+; ACC[0]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; ACC[1]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; ACC[2]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; ACC[3]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; ACC[4]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; ACC[5]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; ACC[6]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; ACC[7]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.95e-09 V                   ; 2.38 V              ; -0.016 V            ; 0.22 V                               ; 0.025 V                              ; 3.06e-10 s                  ; 3.3e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 5.95e-09 V                  ; 2.38 V             ; -0.016 V           ; 0.22 V                              ; 0.025 V                             ; 3.06e-10 s                 ; 3.3e-10 s                  ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.45e-09 V                   ; 2.38 V              ; -0.0609 V           ; 0.148 V                              ; 0.095 V                              ; 2.82e-10 s                  ; 2.59e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.45e-09 V                  ; 2.38 V             ; -0.0609 V          ; 0.148 V                             ; 0.095 V                             ; 2.82e-10 s                 ; 2.59e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.61e-09 V                   ; 2.38 V              ; -0.00274 V          ; 0.141 V                              ; 0.006 V                              ; 4.7e-10 s                   ; 6.02e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.61e-09 V                  ; 2.38 V             ; -0.00274 V         ; 0.141 V                             ; 0.006 V                             ; 4.7e-10 s                  ; 6.02e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; z             ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; cy            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.33 V              ; -0.00344 V          ; 0.134 V                              ; 0.075 V                              ; 3.33e-09 s                  ; 3.16e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.33 V             ; -0.00344 V         ; 0.134 V                             ; 0.075 V                             ; 3.33e-09 s                 ; 3.16e-09 s                 ; Yes                       ; Yes                       ;
+; ACC[0]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; ACC[1]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; ACC[2]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; ACC[3]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; ACC[4]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; ACC[5]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; ACC[6]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; ACC[7]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.06e-06 V                   ; 2.36 V              ; -0.00724 V          ; 0.107 V                              ; 0.02 V                               ; 4.5e-10 s                   ; 4.25e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.06e-06 V                  ; 2.36 V             ; -0.00724 V         ; 0.107 V                             ; 0.02 V                              ; 4.5e-10 s                  ; 4.25e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.74e-07 V                   ; 2.36 V              ; -0.0201 V           ; 0.072 V                              ; 0.033 V                              ; 4.04e-10 s                  ; 3.29e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.74e-07 V                  ; 2.36 V             ; -0.0201 V          ; 0.072 V                             ; 0.033 V                             ; 4.04e-10 s                 ; 3.29e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.45e-07 V                   ; 2.35 V              ; -0.00643 V          ; 0.081 V                              ; 0.031 V                              ; 5.31e-10 s                  ; 7.59e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.45e-07 V                  ; 2.35 V             ; -0.00643 V         ; 0.081 V                             ; 0.031 V                             ; 5.31e-10 s                 ; 7.59e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; z             ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; cy            ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.64 V              ; -0.0113 V           ; 0.208 V                              ; 0.179 V                              ; 2.38e-09 s                  ; 2.23e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.64 V             ; -0.0113 V          ; 0.208 V                             ; 0.179 V                             ; 2.38e-09 s                 ; 2.23e-09 s                 ; No                        ; Yes                       ;
+; ACC[0]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ACC[1]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ACC[2]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ACC[3]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ACC[4]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ACC[5]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ACC[6]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ACC[7]        ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.22e-08 V                   ; 2.74 V              ; -0.06 V             ; 0.158 V                              ; 0.08 V                               ; 2.68e-10 s                  ; 2.19e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.22e-08 V                  ; 2.74 V             ; -0.06 V            ; 0.158 V                             ; 0.08 V                              ; 2.68e-10 s                 ; 2.19e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.54e-08 V                   ; 2.7 V               ; -0.00943 V          ; 0.276 V                              ; 0.035 V                              ; 3.19e-10 s                  ; 4.99e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.54e-08 V                  ; 2.7 V              ; -0.00943 V         ; 0.276 V                             ; 0.035 V                             ; 3.19e-10 s                 ; 4.99e-10 s                 ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 494465   ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 494465   ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 11    ; 11   ;
+; Unconstrained Output Ports      ; 10    ; 10   ;
+; Unconstrained Output Port Paths ; 10    ; 10   ;
++---------------------------------+-------+------+
+
+
++-------------------------------------+
+; Clock Status Summary                ;
++--------+-------+------+-------------+
+; Target ; Clock ; Type ; Status      ;
++--------+-------+------+-------------+
+; clk    ; clk   ; Base ; Constrained ;
++--------+-------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; reset      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; ACC[0]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ACC[1]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ACC[2]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ACC[3]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ACC[4]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ACC[5]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ACC[6]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ACC[7]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; cy          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; z           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; reset      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; ACC[0]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ACC[1]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ACC[2]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ACC[3]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ACC[4]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ACC[5]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ACC[6]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; ACC[7]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; cy          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; z           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Thu May 20 15:10:43 2021
+Info: Command: quartus_sta processor_8085_multi -c processor_8085_multi
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332104): Reading SDC File: 'processor_8085_multi.out.sdc'
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Info (332146): Worst-case setup slack is 0.337
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.337               0.000 clk 
+Info (332146): Worst-case hold slack is 0.358
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.358               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 4.674
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     4.674               0.000 clk 
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332146): Worst-case setup slack is 1.302
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.302               0.000 clk 
+Info (332146): Worst-case hold slack is 0.312
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.312               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 4.697
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     4.697               0.000 clk 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332146): Worst-case setup slack is 4.366
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     4.366               0.000 clk 
+Info (332146): Worst-case hold slack is 0.187
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.187               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 4.440
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     4.440               0.000 clk 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 928 megabytes
+    Info: Processing ended: Thu May 20 15:10:47 2021
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:05
+
+

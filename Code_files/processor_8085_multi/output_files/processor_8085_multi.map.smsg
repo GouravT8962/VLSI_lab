@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at processor_8085_multi.v(5): object "ACC" differs only in case from object "Acc" in the same scope File: /home/alex/verilog_codes/processor_8085_multi/processor_8085_multi.v Line: 5
