@@ -1,0 +1,233 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/alex/verilog_codes/processor_8085_multi/simulation/modelsim
+vALU_8085
+Z1 !s110 1621504784
+!i10b 1
+!s100 DP``<bBU?UohVPNk7c@eQ2
+IEX;bfRnUQ]UD;Q6Yo:kiX2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1621335515
+8/home/alex/verilog_codes/processor_8085_multi/ALU_8085.v
+F/home/alex/verilog_codes/processor_8085_multi/ALU_8085.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1621504784.000000
+!s107 /home/alex/verilog_codes/processor_8085_multi/ALU_8085.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_multi|/home/alex/verilog_codes/processor_8085_multi/ALU_8085.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+/home/alex/verilog_codes/processor_8085_multi
+Z7 tCvgOpt 0
+n@a@l@u_8085
+valu_control_8085_multi
+R1
+!i10b 1
+!s100 09:n4CkP`E@0aZnhMW@nA2
+I=a8o@bN0V7Dz>Q@[1?VUI2
+R2
+R0
+w1619165200
+8/home/alex/verilog_codes/processor_8085_multi/alu_control_8085_multi.v
+F/home/alex/verilog_codes/processor_8085_multi/alu_control_8085_multi.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_multi/alu_control_8085_multi.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_multi|/home/alex/verilog_codes/processor_8085_multi/alu_control_8085_multi.v|
+!i113 1
+R5
+R6
+R7
+vcontroller_8085_multi
+Z8 !s110 1621504785
+!i10b 1
+!s100 ldm>6i:WM42F3]o2o9f=c0
+I@>T1RlYA_9FDhd7Cca?=?2
+R2
+R0
+w1619167845
+8/home/alex/verilog_codes/processor_8085_multi/controller_8085_multi.v
+F/home/alex/verilog_codes/processor_8085_multi/controller_8085_multi.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_multi/controller_8085_multi.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_multi|/home/alex/verilog_codes/processor_8085_multi/controller_8085_multi.v|
+!i113 1
+R5
+R6
+R7
+vflag
+R1
+!i10b 1
+!s100 <15;Y9^OhAoj;cUP4kMES1
+IZREN_U`WVGallF:51eZ;M1
+R2
+R0
+w1619000738
+8/home/alex/verilog_codes/processor_8085_multi/flag.v
+F/home/alex/verilog_codes/processor_8085_multi/flag.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_multi/flag.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_multi|/home/alex/verilog_codes/processor_8085_multi/flag.v|
+!i113 1
+R5
+R6
+R7
+vgeneric_testbench_multi_8085
+R8
+!i10b 1
+!s100 `UPT2?G95T>:>k=MK;81[2
+I=?lE]=Yhm3;fPIY:ekPha0
+R2
+R0
+w1621336032
+8/home/alex/verilog_codes/processor_8085_multi/generic_testbench_multi_8085.v
+F/home/alex/verilog_codes/processor_8085_multi/generic_testbench_multi_8085.v
+L0 2
+R3
+r1
+!s85 0
+31
+Z9 !s108 1621504785.000000
+!s107 /home/alex/verilog_codes/processor_8085_multi/generic_testbench_multi_8085.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_multi|/home/alex/verilog_codes/processor_8085_multi/generic_testbench_multi_8085.v|
+!i113 1
+R5
+R6
+R7
+vir
+R1
+!i10b 1
+!s100 @]7=mheSc<5SzC<AbDn[D3
+IeE5G;_6Wm=ST3iU_NHz@k3
+R2
+R0
+w1616670261
+8/home/alex/verilog_codes/processor_8085_multi/ir.v
+F/home/alex/verilog_codes/processor_8085_multi/ir.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_multi/ir.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_multi|/home/alex/verilog_codes/processor_8085_multi/ir.v|
+!i113 1
+R5
+R6
+R7
+vMEM_8085_multi
+R8
+!i10b 1
+!s100 [D3P5>UEi9h1<A9aLS`Jl0
+I[P=GbXmWK=hePENYbRBDP1
+R2
+R0
+w1621504771
+8/home/alex/verilog_codes/processor_8085_multi/MEM_8085_multi.v
+F/home/alex/verilog_codes/processor_8085_multi/MEM_8085_multi.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 /home/alex/verilog_codes/processor_8085_multi/MEM_8085_multi.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_multi|/home/alex/verilog_codes/processor_8085_multi/MEM_8085_multi.v|
+!i113 1
+R5
+R6
+R7
+n@m@e@m_8085_multi
+vprocessor_8085_multi
+R1
+!i10b 1
+!s100 eQ]_47]27oC8Xae04lo@_1
+Iem:nJ@0eJPPabe^GXmmgm0
+R2
+R0
+w1621333901
+8/home/alex/verilog_codes/processor_8085_multi/processor_8085_multi.v
+F/home/alex/verilog_codes/processor_8085_multi/processor_8085_multi.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_multi/processor_8085_multi.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_multi|/home/alex/verilog_codes/processor_8085_multi/processor_8085_multi.v|
+!i113 1
+R5
+R6
+R7
+vRF1
+R1
+!i10b 1
+!s100 oAJDzaf:JATEMBhE_]nzW1
+ICXUDoC`R`H=17k@d2dii83
+R2
+R0
+w1619168017
+8/home/alex/verilog_codes/processor_8085_multi/RF1.v
+F/home/alex/verilog_codes/processor_8085_multi/RF1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_multi/RF1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_multi|/home/alex/verilog_codes/processor_8085_multi/RF1.v|
+!i113 1
+R5
+R6
+R7
+n@r@f1
+vtemp
+R1
+!i10b 1
+!s100 `PHTHO<D8CD@oaUH<af=S0
+I7L6O?T>JzT<7D6Qm7oBf]0
+R2
+R0
+w1616746168
+8/home/alex/verilog_codes/processor_8085_multi/temp.v
+F/home/alex/verilog_codes/processor_8085_multi/temp.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/alex/verilog_codes/processor_8085_multi/temp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/alex/verilog_codes/processor_8085_multi|/home/alex/verilog_codes/processor_8085_multi/temp.v|
+!i113 1
+R5
+R6
+R7
